@@ -1,0 +1,28 @@
+action (GeoSearch) {
+	description (좌표 정보를 기반으로 공적 마스크 판매정보를 찾는 액션)
+	type(Search)
+	collect {
+		computed-input (point){ // 좌표 정보 
+			type (Point)
+			min (Optional) max (One)
+			compute{
+				intent{
+          goal : geo.CurrentLocation
+				}
+			}
+		}
+	}
+	output (ResultsSearch) {
+    throws {
+      error (NoResult) {
+				on-catch {
+					halt {
+						dialog {
+							template ("마스크 판매처가 없네요.")
+						}
+					}
+				}
+			}
+    }
+  }
+}

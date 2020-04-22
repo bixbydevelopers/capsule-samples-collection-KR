@@ -1,0 +1,5 @@
+train (t-md8s3y27m0baowb8eih2zl8jc) {
+  utterance ("[g:SelectCategory:continue:QuizCategory] (뮤지컬)[v:QuizCategory:'Musicals & Theatres']로 골라줘")
+  plan (Y2BmUEitSMwtyEnVKyzNrEpPzE3VCwQynBNLUtPziyr9SnMZ5DFUBKfmpCaXwNQwyOI1goGJgRGIGYAkIwMIQPkA)
+  last-modified (1550723323742)
+}

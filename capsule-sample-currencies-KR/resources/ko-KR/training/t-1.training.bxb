@@ -1,0 +1,4 @@
+train (t-1nag2kwjqsupmyaawb5trpoy2) {
+  utterance ("[g:CurrencyInfo] (일주일전)[v:time.DateTimeExpression] 환율 어때?")
+  plan (Y2BmUChOzC0uzUvXS61IzC3Icc5PSTXXcy4tKkrNS670zEvLZ1DGpsI9tQRFkXRZZpleSWZuqp5LYklqCJDhWlFQlFpcnJmfx8DEwAjEDECSkQEEmCAYAA==)
+}

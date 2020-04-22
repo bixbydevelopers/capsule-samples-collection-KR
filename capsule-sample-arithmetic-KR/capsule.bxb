@@ -1,0 +1,25 @@
+capsule {
+  id (example.arithmetic)
+  version (0.1.0)
+  format (3)
+  targets {
+    target (bixby-mobile-en-US){enabled (false)}
+    target (bixby-mobile-ko-KR)
+  }
+  
+  runtime-version (2)
+  
+  capsule-imports {
+    import (viv.core) { as (core) }
+  }
+
+  store-sections{
+    section (GamesAndFun)
+  }
+
+  store-countries{
+    only{
+      allow (KR)
+    }
+  }
+}

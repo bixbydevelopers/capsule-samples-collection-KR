@@ -1,0 +1,5 @@
+train (t-1jgqpqdbcpzuaux03es75ubta) {
+  utterance ("[g:Restaurant:prompt] (일산)[v:Location]으로 부탁해")
+  plan (Y2BhkEmtSMwtyEnVy0jMSylOK0pN1QtKLS5JLC1KzCthUMaUdU8tgSgoASrwySwuYZDCVOSTn5xYkpmfx8BbllmmV5yak6YXDCQYmBkYGZiAJAOQBkEIYIJgAA==)
+  last-modified (1584666675480)
+}

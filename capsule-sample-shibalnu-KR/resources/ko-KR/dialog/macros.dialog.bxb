@@ -1,0 +1,44 @@
+// 여러 상황에서 사용될 수 있는 dialog template를 선언 (https://bixbydevelopers.com/dev/docs/dev-guide/developers/refining-dialog.dialog-macros)
+template-macro-def (chooseOneMode) {
+  content {
+    choose (Random) {
+      template("한가지만 선택하여 주셔야해요.")
+      template("오직 한가지만 골라주세요.")
+    }
+  }
+}
+
+template-macro-def (unknownError) {
+  content {
+    choose (Random) {
+      template("문제가 발생한 것같아요! 다시 한번 부탁드려요.")
+      template("지금은 사진을 보여주지 못할것 같아요.")
+    }
+  }
+}
+
+template-macro-def (cardResult) {
+  content {
+    choose (Random) {
+      template("귀여운 시바견 사진을 확인해보세요!")
+      template("귀여운 시바견 사진을 가져와봤어요!")
+    }
+  }
+}
+
+template-macro-def (cardResults) {
+  content {
+    choose (Random) {
+      template("귀여운 시바견 사진들중 몇개를 가져와봤어요!")
+    }
+  }
+}
+
+template-macro-def (chooseModeInput) {
+  content {
+    choose (Random) {
+      template("어떤 방법을 원하세요?")
+      template("아래의 방법중 하나만 선택해주세요.")
+    }
+  }
+}

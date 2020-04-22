@@ -1,0 +1,5 @@
+train (t-op2tylb3ys4zlxdi8sp3anuxc) {
+  utterance ([g:ShowQuiz:continue] 다시 풀래)
+  plan (Y2BmkE2tSMwtyEnVKyzNrEpPzE3VCyjKTy9KLS72zEvLZ5DEkA7OyC8PBHII6WRiYARiBiDJyMAAowE=)
+  last-modified (1550189662137)
+}

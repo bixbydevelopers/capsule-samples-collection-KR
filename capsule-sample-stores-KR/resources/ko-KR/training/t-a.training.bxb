@@ -1,0 +1,4 @@
+train (t-auizzeoz654q6xmy5ctda6pvz) {
+  utterance ("[g:StoreInfo] (홍대)[v:geo.PlaceName] 근처 맛집 알려줘")
+  plan (Y2BhkCtOzC0uzUvXS61IzC3ISXXOT0k10QsuyS9K9cxLy8ch75aZlwJWw2CAX14lOT+vuKQoMTOvRLc4NbEoOYNBsCyzTC89NV8vICcxOdUvMTeVgZmBkYEJSDKAaUYGCGACYqAYAA==)
+}

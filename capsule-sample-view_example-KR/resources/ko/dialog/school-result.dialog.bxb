@@ -1,0 +1,10 @@
+// dialog (Result) {
+//   match: schoolInfo(schoolinfo)
+  
+//   if (size(schoolinfo) > 1){
+//     template ("어떤 학교의 급식을 알려드릴까요??")
+//   }
+//   else{
+//     template("#{value(schoolinfo.schoolname)}의 급식 정보입니다.")
+//   }
+// }

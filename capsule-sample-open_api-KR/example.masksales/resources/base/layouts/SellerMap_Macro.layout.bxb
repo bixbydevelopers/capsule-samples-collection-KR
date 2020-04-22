@@ -1,0 +1,44 @@
+layout-macro-def (SellerMap) {
+	params {
+		param (info) {
+			type (ResultsSearch)
+			min (Required) max (One)
+		}
+	}
+	content {
+		section {
+			content {
+				map-card {
+          on-click {
+            intent {
+              goal: MapPunchOut
+              value : $expr(info.resultPoint)
+              value : $expr(info.sellerName)
+            }
+          }
+					aspect-ratio(16:9)
+					title-area {
+						slot1 {
+							text {
+								value("#{value(info.sellerName)}")
+								style(Title_L)
+							}
+						}
+					}
+					markers {
+						marker {
+							geo (info.resultPoint) // 사용자의 위치가 아닌 판매처 위치
+							icon("/images/red-marker.png")
+							width (15)
+							height (20)
+							anchor-x (5)
+							anchor-y (15)
+							rotation (0)
+						}
+					}
+					zoom(16)
+				}
+			}
+		}
+	}
+}

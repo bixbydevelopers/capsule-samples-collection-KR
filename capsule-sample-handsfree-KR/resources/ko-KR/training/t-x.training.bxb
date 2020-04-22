@@ -1,0 +1,5 @@
+train (t-xq0xx2wxxlx1xlxai5ozimtgs) {
+  utterance ("[g:Restaurant:prompt] (홍대)[v:Location]")
+  plan (Y2BhkEmtSMwtyEnVy0jMSylOK0pN1QtKLS5JLC1KzCthUMaUdU8tgSgoASrwySwuYZDCVOSTn5xYkpmfx8BbllmmV5yak6YXDCQYmBkYGZiAJAOQBkEIYIJgAA==)
+  last-modified (1584666791253)
+}

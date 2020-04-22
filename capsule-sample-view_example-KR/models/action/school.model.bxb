@@ -1,0 +1,6 @@
+action (school) {
+  description (급식정보를 받아오는 action)
+  type(Search)
+
+  output (schoolInfo)
+}

@@ -1,0 +1,32 @@
+template-macro-def (ProblemDialog) {
+  content {
+    choose (Random) {
+      template("문제가 발생했어요. 다시 한번 말씀해주세요.")
+    }
+  }
+}
+
+template-macro-def (NolocalDialog) {
+  content {
+    choose (Random) {
+      template("아직 지원하지 않는 지역이에요. 다른 지역을 찾아주세요.")
+    }
+  }
+}
+
+template-macro-def (SuccessResult) {
+  params {
+    param(info) {
+      type (CurrencyInfo)
+      min (Optional) max (Many)
+    }
+  }
+  
+  content {
+    template("[#{value(info.baseValue)}] [#{value(info.baseSymbol.currencySymbol)}]을(를) 변환한 환율 결과입니다."){
+      
+      // 빅스비가 읽어주는 문장 변경 가능(https://bixbydevelopers.com/dev/docs/reference/type/dialog.template.speech)
+      speech ("환율 결과를 확인하여 보세요.")
+    }
+  }
+}

@@ -1,0 +1,18 @@
+layout-macro-def (info_list_summary) {
+  params {
+    param (info) {
+      type (DetailData)
+      min (Required) max (One)
+    }
+  }
+  content {
+    cell-card{
+      slot2{
+        content{
+          primary("#{value(info.title)}")
+          secondary("[#{value(info.date)}] [#{value(info.time)}] [#{value(info.dayofweek)}]")
+        }
+      }
+    }   
+  }
+}

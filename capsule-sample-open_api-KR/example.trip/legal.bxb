@@ -1,0 +1,13 @@
+// https://bixbydevelopers.com/dev/docs/dev-guide/developers/deploying.prep-marketplace#provide-legal-agreements
+legal {
+  country-documents {
+    store-country (KR)
+    terms-and-conditions { // 이용 약관
+      url(https://www.youtube.com/t/terms)
+    }
+    privacy-policy { // 개인정보 처리 방침
+      url(https://policies.google.com/privacy?hl=ko&gl=kr)
+    }    
+  }
+}
+

@@ -1,0 +1,9 @@
+enum (DateQueryType) {
+  symbol (월요일)
+  symbol (화요일)
+  symbol (수요일)
+  symbol (목요일)
+  symbol (금요일)
+  symbol (토요일)
+  symbol (일요일)
+}

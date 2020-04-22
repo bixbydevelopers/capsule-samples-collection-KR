@@ -1,0 +1,15 @@
+action (MapPunchOut) {
+  description (지도를 터치할 때 지도 앱으로 이동하기 위한 액션)
+  type(Search)
+  collect {
+    input (resultPoint) {
+      type (ResultPoint)
+      min (Optional) max (One)
+    }
+    input (sellerName) {
+      type (SellerName)
+      min (Optional) max (One)
+    }
+  }
+  output (PunchOutUrl)
+}

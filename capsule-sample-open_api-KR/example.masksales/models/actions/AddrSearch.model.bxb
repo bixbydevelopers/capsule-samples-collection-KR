@@ -1,0 +1,23 @@
+action (AddrSearch) {
+	description (주소 정보를 기반으로 공적 마스크 판매정보를 찾는 액션)
+	type(Search)
+	collect {
+		input (regionName) { // 주소 정보 
+			type (geo.NamedPoint)
+			min (Required) max (One)
+		}
+	}
+	output (ResultsSearch) {
+    throws {
+      error (NoResult) {
+				on-catch {
+					halt {
+						dialog {
+							template ("마스크 판매처가 없네요.")
+						}
+					}
+				}
+			}
+    }
+  }
+}

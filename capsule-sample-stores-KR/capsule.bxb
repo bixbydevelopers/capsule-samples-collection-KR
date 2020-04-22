@@ -1,0 +1,28 @@
+capsule {
+  id (example.stores)
+  version (1.0.0)
+  format (3)
+  targets {
+    target (bixby-mobile-ko-KR)
+    target (bixby-mobile-en-US){enabled (false)}
+  }
+  
+  runtime-version (3)
+  
+  capsule-imports {
+    import (viv.entity) { version(4.0.14) as (entity) }
+    import (viv.core){ as (core) version-from (entity)}
+    import (viv.common) { version(4.0.3) as (common)}
+    import (viv.geo) { as (geo) version-from (entity)}
+  }
+
+  store-sections{
+    section (Local)
+  }
+
+  store-countries{
+    only{
+      allow (KR)
+    }
+  }
+}

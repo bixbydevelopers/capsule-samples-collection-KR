@@ -1,0 +1,11 @@
+structure (Mode) {
+  description (Mode)
+  property (images) {
+     type (Images)
+     min (Required)
+  }
+  property (random) {
+     type (Random)
+     min (Required)
+  }
+}

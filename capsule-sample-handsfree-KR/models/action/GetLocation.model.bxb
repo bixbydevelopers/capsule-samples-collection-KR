@@ -1,0 +1,9 @@
+action (GetLocation) {
+  description (맛집이 저장된 위치 리스트를 가져옵니다.)
+  
+  type(Search)
+
+  collect {}
+
+  output (Location)
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<!-- suppress ThymeleafVariablesResolveInspection -->
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+    <title>OAuth login</title>
+
+    <script th:src="@{/webjars/jquery/3.4.1/jquery.min.js}"></script>
+</head>
+<body>
+<div>
+    <label>ID : <input id="id" type="text" placeholder="ID"/></label><br/>
+    <label>PW : <input id="password" type="password" placeholder="PASSWORD"/></label><br/>
+    <button id="btnLogin" type="button">로그인</button>
+</div>
+
+<form id="formToken" action="/oauthEx/code" method="post">
+    <input type="hidden" name="redirectURI" th:value="${redirectURI}"/>
+    <input type="hidden" name="clientId" th:value="${clientId}"/>
+    <input type="hidden" name="state" th:value="${state}"/>
+    <input type="hidden" name="scope" th:value="${scope}"/>
+    <input type="hidden" name="loginId"/>
+</form>
+
+<script type="application/javascript" th:inline="javascript">
+    $('#btnLogin').click(function () {
+        let params = {
+            'id' : $('#id').val(),
+            'password': $('#password').val()
+        };
+
+        $.ajax({
+            type: 'POST',
+            url : [[${contextPath}]] + '/login/check',
+            contentType: 'application/x-www-form-urlencoded',
+            data : params,
+            success: function(data) {
+                if (data.success) {
+                    $('input[name=loginId]').val($('#id').val());
+                    $('#formToken').submit();
+                } else {
+                    alert(data.message);
+                }
+            },
+            error: function(jqXHR, textStatus, message) {
+                alert(message);
+            }
+        });
+    });
+</script>
+
+</body>
+</html>

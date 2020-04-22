@@ -1,0 +1,5 @@
+train (t-ikxsbs9sogxwmbl4hi5pyox5q) {
+  utterance ("[g:SelectType:continue:QuizType] (참거짓)[v:QuizType:'참, 거짓형'] 타입으로")
+  plan (Y2BmkEytSMwtyEnVKyzNrEpPzE3VCwQyQioLUhmkMaSCU3NSk0vAknj0MTEwAjEDkGRkAAEoHwA=)
+  last-modified (1550724067560)
+}

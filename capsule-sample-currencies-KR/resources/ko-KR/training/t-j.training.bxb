@@ -1,0 +1,4 @@
+train (t-j0m4pgs3ro7ecxiopj9ro8d4k) {
+  utterance ("[g:CurrencyInfo] (오늘)[v:time.DateTimeExpression] {[g:BaseCurrency] (미국)[v:CurrencySymbol:USD]} 기준 환율 리스트 보여줘")
+  plan (Y2BjUChOzC0uzUvXS61IzC3Icc5PSTXXcy4tKkrNS670zEvLZ1DGpsI9tQRFEVZjnBKLU2GqcBqDokgJn2uCK3OT8nMYpMsyy/RKMnNT9VwSS1JDgAzXioKi1OLizPw8BlYGRgYmBmYGFiCLAcpmBEIGMAYBFiBmBYqzgGQB)
+}

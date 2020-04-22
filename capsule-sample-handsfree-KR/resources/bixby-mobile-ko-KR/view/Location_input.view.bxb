@@ -1,0 +1,50 @@
+input-view{
+  match: Location(this)
+
+  message{
+    template ("원하시는 지역을 선택하여 주세요.")
+  }
+
+  render{
+    // hands-free 모드인 경우 (https://bixbydevelopers.com/dev/docs/reference/ref-topics/el-ref#special-el-variables)
+    if($handsFree){
+      selection-of (this){
+        navigation-mode{
+          read-many {
+            page-size (size(this))
+            list-summary ("현재 선택할 수 있는 다음과 같은 지역이 있습니다.")
+            page-content {
+              underflow-statement (첫 번째 지역입니다)
+              item-selection-question (어떤 것을 선택하시겠습니까?)
+              overflow-statement (지역을 모두 말씀드렸습니다)
+              overflow-question (어떠한 지역을 선택하시겠습니까?)
+            }
+          }
+        }
+        where-each (this){
+          spoken-summary("#{value(this)}")
+          cell-card {
+            slot2 {
+              content {
+                  primary ("#{value(this)}")
+              }
+            }
+         }
+        }
+      }
+    } // hands-free 모드 아닌 경우
+    else{
+      selection-of (this){
+        where-each (this){
+          cell-card {
+            slot2 {
+              content {
+                  primary ("#{value(this)}")
+              }
+            }
+         }
+        }
+      }
+    }
+  }
+}

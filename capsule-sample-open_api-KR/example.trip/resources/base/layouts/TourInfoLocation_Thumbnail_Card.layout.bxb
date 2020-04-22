@@ -1,0 +1,61 @@
+layout-macro-def (tourinfolocation-thumbnail-card) {
+  params {
+    param (tourinfolocation) {
+      type (TourInfoLocationResult)
+      min (Required) max (One)
+    }
+  }
+  content {
+    if (exists(tourinfolocation.firstimage)) {
+      thumbnail-card {
+        image-position (End)
+        image-url ("#{value(tourinfolocation.firstimage)}")
+        title-area {
+          halign (Start)
+          slot1 {
+            if (exists(tourinfolocation.title)) {
+              text {
+                value ("#{value(tourinfolocation.title)}")
+                style (Title_XS)
+              }              
+            } 
+            else {
+              text {
+                value ("")
+              }                 
+            }
+          }
+          slot2 {
+            if (exists(tourinfolocation.addr1) && exists(tourinfolocation.addr2)) {
+              paragraph {
+                value {
+                  template ("주소: #{value(tourinfolocation.addr1)} #{value(tourinfolocation.addr2)}")
+                }
+                style (Detail_M)
+              }
+            }
+            else {
+              paragraph {
+                value {
+                  template ("")
+                }
+              }              
+            }
+          }
+          slot3 {
+            single-line {
+              if (exists(tourinfolocation.dist)) {
+                text {
+                  value {
+                    template ("현재 위치에서 거리: #{value(tourinfolocation.dist)} 미터")
+                  }
+                  style (Detail_M_Soft)
+                }
+              }
+            }
+          }
+        }
+      }      
+    }
+  }
+}

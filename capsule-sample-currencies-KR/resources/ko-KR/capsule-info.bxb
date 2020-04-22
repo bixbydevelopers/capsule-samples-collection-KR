@@ -1,0 +1,15 @@
+capsule-info {
+  display-name  (환전정보)
+  developer-name  (환전정보)
+  icon-asset  (/img/bixby_launcher.png)
+  description ("간단한 환전 정보 알려주는 capsule 입니다")
+  website-url  (https://github.com/bixbydevelopers/capsule-sample-currencies-KR)
+  terms-url  (https://github.com/bixbydevelopers/capsule-sample-currencies-KR/blob/master/LICENSE)
+  dispatch-name (환전정보)
+  dispatch-aliases {
+    alias (환전)
+  }
+  search-keywords{
+    keyword (예제)
+  }
+}

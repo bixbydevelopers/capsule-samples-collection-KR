@@ -1,0 +1,18 @@
+action (TourInfoLocation) {
+  type (Search)
+  collect {
+    input (point) {
+      type (Point)
+      min (Required) max (One)
+			default-init {
+				if ($user.currentLocation.$exists) {
+					intent {
+						goal: geo.GeoPoint
+						value-set: geo.CurrentLocation { $expr ($user.currentLocation) }
+					}
+				}
+			}      
+    }
+  }
+  output (TourInfoLocationResult)
+}

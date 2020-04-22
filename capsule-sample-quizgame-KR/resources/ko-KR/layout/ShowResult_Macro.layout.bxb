@@ -1,0 +1,62 @@
+layout-macro-def (ShowResult) {
+  params {
+    param (result) {
+      type (ProgressInfo)
+      min (Required) max (Many)
+    }
+  }
+  content {
+    section{
+      content{      
+        for-each(result.quizzes){ // 객체를 이터레이트하기 위한 방법, 사용법: for-each(upper.targetObject){ as (targetObject) { grammar }}
+          as(quiz){
+            if(quiz.result == true){
+              cell-card{
+                slot1{
+                  image{
+                    url("img/correct.png")
+                    shape (Circle)
+                  }
+                }
+                slot2{
+                  content{
+                    primary("#{value(quiz.id)}번: #{value(quiz.question)}")
+                    secondary("정답: #{value(quiz.correct_answer)}")
+                  }
+                }
+              }
+            }else{
+              cell-card{
+                slot1{
+                  image{
+                    url("img/incorrect.png")
+                    shape (Circle)
+                  }
+                }
+                slot2{
+                  content{
+                    primary("#{value(quiz.id)}번: #{value(quiz.question)}") 
+                    secondary("정답: #{value(quiz.correct_answer)}       선택한 답: #{value(quiz.answers_list[quiz.selected])}")
+                  }
+                }
+              }
+            }
+          }
+        }
+        cell-card{
+          slot2{
+            content{
+              primary("다시 풀기")
+            }
+          }
+          on-click{
+            intent {
+              goal: ShowQuiz
+            }
+          }
+        }
+      }
+    }
+  }
+}
+

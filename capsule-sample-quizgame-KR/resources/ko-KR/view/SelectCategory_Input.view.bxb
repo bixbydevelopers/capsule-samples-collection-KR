@@ -1,0 +1,21 @@
+input-view{
+  match: QuizCategory(this){
+    to-input: SelectCategory
+  }
+  message{
+    template ("원하는 카테고리를 선택하세요.")
+  }
+  render{
+    selection-of (this){
+      where-each (this){
+        cell-card{
+          slot2{
+            content{
+              primary("#{value(this)}")
+            }
+          }
+        }
+      }
+    }
+  }
+}

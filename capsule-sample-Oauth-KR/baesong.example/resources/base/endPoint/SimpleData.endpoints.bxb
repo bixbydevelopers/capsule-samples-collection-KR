@@ -1,0 +1,21 @@
+endpoints {
+  action-endpoints {
+    action-endpoint (SimpleDataGetAction) {
+      accepted-inputs ()
+      local-endpoint (SimpleDataGetAJAX.js)
+      
+      authorization {
+        user
+      }
+    }
+    
+    action-endpoint (SimpleDataSaveAction) {
+      accepted-inputs (message)
+      local-endpoint (SimpleDataSaveAJAX.js)
+      
+      authorization {
+        user
+      }
+    }
+  }
+}

@@ -1,0 +1,31 @@
+structure (ResultsSearch) {
+  description (판매처 결과값)
+	property (sellerName) { // 판매처 이름
+		type (SellerName)
+		min (Required) max (One)
+	}
+	property (sellerAddr) { // 판매처 주소
+		type (SellerAddr)
+		min (Required) max (One)
+	}
+	property (remainMask) { // 마스크 재고량
+		type (RemainMask)
+		min (Optional) max (One)
+	}
+	property(maskWhen){ // 마스크 입고 시간
+		type (MaskWhen)
+		min (Optional) max (One) 
+	}
+	property (point) { // 좌표(위,경도) 정보  
+    type (Point)
+    min (Optional) max (One)
+  }
+	property (resultPoint){ // 판매처 결과 좌표 정보
+		type (ResultPoint)
+		min (Optional) max (One)
+	}
+	property (isNearFlag) { // 좌표 기반인지 여부 
+    type (core.Boolean)
+    min (Required) max (One)
+  }
+}

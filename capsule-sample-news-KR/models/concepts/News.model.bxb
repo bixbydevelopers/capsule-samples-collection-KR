@@ -1,0 +1,22 @@
+structure (News) {
+  property (url) {
+    type (URL)
+    min (Required) max (One)
+  }
+  property (title) {
+    type (Title)
+    min (Required) max (One)
+  }
+  property (tel) {
+    type (Tel)
+    min (Optional) max (One)
+  }
+  property (topic) {
+    type (Topic)
+    min (Optional) max (One)
+  }
+  property (date) {
+    type (DateResult)
+    min (Optional) max (One)
+  }
+}

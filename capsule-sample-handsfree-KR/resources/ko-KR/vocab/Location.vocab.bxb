@@ -1,0 +1,8 @@
+// 발화에 대한 빅스비 동작의 정확성을 높이기 위하여 사용 (https://bixbydevelopers.com/dev/docs/dev-guide/developers/training.vocabulary)
+vocab(Location){
+  "일산"
+  "강남"
+  "수원"
+  "이태원"
+  "광주"
+}

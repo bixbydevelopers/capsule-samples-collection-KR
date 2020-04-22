@@ -1,0 +1,5 @@
+train (t-ui9e7tyc2jjgi3k5wzjno7uyl) {
+  utterance ([g:TourInfoLocationResult] 주변 관광정보 알려줘)
+  plan (Y2BkUCvISaxML8ovzUvRKynKLNALyS8t8sxLy/fJT04syczPC0otLs0pYQABRhABAA==)
+  last-modified (1585107830388)
+}

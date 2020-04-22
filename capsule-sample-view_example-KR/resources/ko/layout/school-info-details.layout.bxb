@@ -1,0 +1,24 @@
+// layout-macro-def (school-info-details){
+// 	params{
+// 		param (infos){
+// 			type (schoolInfo)
+// 		}
+// 	}
+	
+// 	content{
+// 		partitioned{
+// 			content{
+// 				for-each (infos.dish){
+// 					as(side){
+// 						single-line{
+// 							text{
+// 								value("#{value(side)}")
+// 								style(Detail_L)
+// 							}
+// 						}
+// 					}
+// 				}
+// 			}
+// 		}
+// 	}
+// }

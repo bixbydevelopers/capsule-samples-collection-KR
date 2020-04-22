@@ -1,0 +1,6 @@
+structure  (TargetCurrency) {
+  property (currencySymbol){
+    type (CurrencySymbol)
+    min (Required) max (One)
+  }
+}

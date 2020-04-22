@@ -1,0 +1,14 @@
+authorization {
+  user {
+    oauth2-authorization-code (samsung) {
+      authorize-endpoint (https://AUTHORIZATION_URL)
+      client-id (CLIENT_ID)
+      client-secret-key (CLIENT_SECRET)
+      scope (read,write,access)
+      // 토큰으로 접근 시 재인증 과정
+      token-endpoint (https://TOKEN_URL)
+    }
+  }
+}
+
+

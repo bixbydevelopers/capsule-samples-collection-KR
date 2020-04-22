@@ -1,0 +1,10 @@
+train (t-vs5xnjlg28sjga8olb69glumz) {
+  utterance ("[g:GetLocalinfoFromLocalname] (고양시 일산서구)[v:geo.SearchTerm] 위치는?")
+  plan (bYxNCsIwEIWfrboWXXkIcwc3diMi6AWGOqaBJiNpUl15dsdqwYUDj3k/8GGORe96Y1lMxXIUFxI2/CB/a9lE7hLlSCF1uqa91NS6cJVdFD+EQJ6xHAEHTZcPYjV225yky9YqCes/5fPecPxhnJhi3Zw5eswwQYESU3X4+lI/Br2vUKfbCw==)
+  last-modified (1571290873905)
+}
+train (t-vukry77tr4z1n33kvm99g82ob) {
+  utterance ("[g:GetLocalinfoFromLocalname] (대전)[v:geo.SearchTerm] 주소 뭐야?")
+  plan (bYxNCsIwEIWfrboWXXkIcwc3diMi6AWGOqaBJiNpUl15dsdqwYUDj3k/8GGORe96Y1lMxXIUFxI2/CB/a9lE7hLlSCF1uqa91NS6cJVdFD+EQJ6xHAEHTZcPYjV225yky9YqCes/5fPecPxhnJhi3Zw5eswwQYESU3X4+lI/Br2vUKfbCw==)
+  last-modified (1571982152384)
+}

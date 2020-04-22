@@ -1,0 +1,36 @@
+layout-macro-def (tourinfolocation-compound-card) {
+  params {
+    param (tourinfolocation) {
+      type (TourInfoLocationResult)
+      min (Required) max (One)
+    }
+  }
+  content {
+    compound-card {
+      content {
+        if (exists(tourinfolocation.firstimage)) {
+          image-card {
+            aspect-ratio (4:3)
+            image-url ("#{value(tourinfolocation.firstimage)}")
+            title-area {
+              halign (Start)
+              slot1 {
+                if (exists(tourinfolocation.title)) {
+                  text {
+                    value ("#{value(tourinfolocation.title)}")
+                    style (Title_S)
+                  }
+                } 
+                else {
+                  text {
+                    value ("")
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

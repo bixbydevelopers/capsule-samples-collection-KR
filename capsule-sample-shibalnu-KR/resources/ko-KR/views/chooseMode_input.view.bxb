@@ -1,0 +1,42 @@
+// input 화면에 대한 보여주는 방식을 설정(https://bixbydevelopers.com/dev/docs/reference/type/input-view)
+input-view {
+  // 입력 화면을 보여주고 싶은 input concept을 지정
+  match: Mode(this)
+
+  message {
+    // input을 받을 시에 보여줄 dialog를 설정
+    template-macro (chooseModeInput)
+  }
+
+  render {
+    // 어떻게 화면을 그릴 것인가에 대하여 설정
+    form {
+      // form UI (https://bixbydevelopers.com/dev/docs/reference/type/input-view.render.form)
+      elements {
+        checkbox {
+          id (checkImage)
+          type (Images)
+          primary-text (다양한 사진들)
+          secondary-text (여러 사진들을 가져옵니다.)
+          value ("#{raw(this.images)}")
+        }
+        checkbox {
+          id (checkRandom)
+          type (Random)
+          primary-text (랜덤 사진)
+          secondary-text (랜덤으로 사진을 가져옵니다.)
+          value ("#{raw(this.random)}")
+        }
+       
+      }
+      on-submit {
+        goal: Mode
+        
+        value: Mode{
+          images: viv.core.FormElement(checkImage)
+          random: viv.core.FormElement(checkRandom)
+        }
+      }
+    }
+  }
+}

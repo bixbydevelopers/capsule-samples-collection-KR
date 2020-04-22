@@ -1,0 +1,5 @@
+train (t-4y87bls45ux0o2p6d8jshi3iu) {
+  utterance ([g:GeoSearch] 내 주변 마스크 재고 알려줘)
+  plan (Y2BiUCrISaxML8ovzUvRy00szi5OzEkt1gtKLS7NKSkOTk0sSs5gkMOqxj01HyrPCIQMUAwkAQ==)
+  last-modified (1585637314677)
+}

@@ -1,0 +1,11 @@
+structure (Result) {
+  property (operator){
+    type (OperatorName)
+    min (Required) max (One)
+  }
+  
+  property (result){
+    type (Output)
+    min (Required) max (One)
+  }
+}

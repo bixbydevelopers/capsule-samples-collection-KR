@@ -1,0 +1,15 @@
+structure (JsonResult) {
+  description (Json format result object)
+  property (success) {
+    type (Success)
+    min (Required) max (One)
+  }
+  property (message) {
+    type (Message)
+    min (Optional) max (One)
+  }
+  property (data) {
+    type (SimpleData)
+    min (Optional) max (Many)
+  }
+}

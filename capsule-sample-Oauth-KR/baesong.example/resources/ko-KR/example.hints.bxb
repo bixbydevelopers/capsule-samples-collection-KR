@@ -1,0 +1,7 @@
+hints {
+  uncategorized {
+    hint ("배송이에서 시작")
+    hint ("배송이에서 전송 안녕하세요")
+    hint ("배송이에서 전송 반갑습니다")
+  }
+}

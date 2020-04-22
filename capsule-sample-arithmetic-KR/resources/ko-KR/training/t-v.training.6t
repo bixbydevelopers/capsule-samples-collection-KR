@@ -1,0 +1,10 @@
+train (t-v3imzfj0v0vzghxfbgefy7ucq) {
+  utterance ("[g:Result] (7)[v:LeftOperand] (곱하기)[v:Operator:multiplication] (7)[v:RightOperand]은?")
+  plan (Y2BlkEytSMwtyEnVSyzKLMnITS3JTNYLSi0uzSlhUMMi5Qhn+hekFiWWZObnMchhUeeTmlYCVpGXwiCNRR6iO7+IQR6b/ZnpGXDdLAyMDEwMzECaAciCQBgAiUHlAA==)
+  last-modified (1555029219705)
+}
+train (t-vvsr13acafazalxied51lmatp) {
+  utterance ("[g:Result] (99)[v:LeftOperand]에서 (9)[v:RightOperand]를 (나눈)[v:Operator:division] 값은?")
+  plan (Y2BlkEytSMwtyEnVSyzKLMnITS3JTNYLSi0uzSlhUMMi5Qhn+hekFiWWZObnMchhUeeTmlYCVpGXwiCNRR6iO7+IQR6b/ZnpGXDdLAyMDEwMzECaAciCQBgAiUHlAA==)
+  last-modified (1555029226967)
+}

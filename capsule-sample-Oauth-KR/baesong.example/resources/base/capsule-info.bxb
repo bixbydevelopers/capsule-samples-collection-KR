@@ -1,0 +1,10 @@
+capsule-info {
+  display-name (배송이)
+  developer-name (굿스플로)
+  icon-asset (/icon/bixby.png)
+  description ("배송 예제 캡슐")
+  search-keywords{
+    keyword (배송)
+  }
+  dispatch-name (배송이)
+}

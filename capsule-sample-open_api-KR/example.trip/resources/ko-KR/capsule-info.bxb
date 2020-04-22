@@ -1,0 +1,21 @@
+// https://bixbydevelopers.com/dev/docs/dev-guide/developers/deploying.prep-marketplace#create-your-capsule-infobxb-file
+capsule-info {
+  display-name (여행가자)
+  dispatch-name (여행가자)
+  developer-name (Bixby)
+  description (Open API를 활용한 주변 관광정보 알려주는 캡슐)
+  icon-asset (images/icon.png)
+  requested-permissions {
+    permission (device-location-access) {
+      justification (Your location will be used to find your position)
+    }
+  }  
+  dispatch-aliases {
+    alias (여행 가자)
+  }  
+  search-keywords {
+    keyword (재미)
+    keyword (여행)
+    keyword (여행가자)
+  }  
+}

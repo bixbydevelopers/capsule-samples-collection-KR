@@ -1,0 +1,11 @@
+action (GetNews) {
+  description (뉴스 데이터를 가져옵니다)
+  type(Search)
+  collect {
+    input (topic) {
+      type (Topic)
+      min (Optional) max (One)
+    }
+  }
+  output (News)
+}

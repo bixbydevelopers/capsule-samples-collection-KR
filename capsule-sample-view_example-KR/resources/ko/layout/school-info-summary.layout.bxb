@@ -1,0 +1,33 @@
+// layout-macro-def (school-info-summary){
+// 	params{
+// 		param (infos){
+// 			type (schoolInfo)
+// 			max (Many)
+// 		}
+// 	}
+	
+// 	content{
+// 		section{
+//       title{
+//         template ("test")
+//       }
+// 			content{
+// 				thumbnail-card{
+// 					title-area{
+// 						halign (Start)
+// 						slot1{
+// 							text{
+// 								style(Title_M)
+// 								value("#{value(infos.schoolname)}")
+// 							}
+// 						}
+// 					}
+// 					image-url {
+// 						template ("#{value(infos.url)}")
+// 					}
+// 					image-position (End)
+// 				}
+// 			}
+// 		}
+// 	}
+// }

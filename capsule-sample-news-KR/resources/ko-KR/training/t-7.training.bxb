@@ -1,0 +1,5 @@
+train (t-7sitlldluw464ibksegsdyvfh) {
+  utterance ("[g:GetNewsByTime] (오후 9시)[v:time.DetachedTime] 뉴스 브리핑")
+  plan (Y2BmEE+tSMwtyEnVy0stL9ZzSS1JzMxxSSxJZJBCkXBPLfED0k6VIZm5qQyiZZlleiVAFlhDckZqCliYiYERiBmAJCMDCED5AA==)
+  last-modified (1571897630231)
+}

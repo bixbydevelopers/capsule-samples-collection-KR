@@ -1,0 +1,28 @@
+structure (schoolInfo) {
+  description (급식정보 Result)
+  property (dish) {
+    type (Dish)
+    min (Optional) max (Many)
+  }
+  property (url){
+    type(ImageUrl)
+    min (Required) max (One)
+  }
+  property (schoolname){
+    type (schoolName)
+    min (Required) max (One)
+  }
+  property (date){
+    type (Date)
+    min (Required) max (One)
+  }
+
+  property (address){
+    type (Address)
+    min (Required) max (One)
+  }
+
+  features{
+    transient
+  }
+}

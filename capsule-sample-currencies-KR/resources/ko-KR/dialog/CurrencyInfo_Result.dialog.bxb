@@ -1,0 +1,13 @@
+dialog (Concept) {
+  description (match에 설정한 model에 대한 상태에 따라 나오게 할 dialog를 설정합니다. )
+  // 참조 (https://bixbydevelopers.com/dev/docs/dev-guide/developers/refining-dialog.intro-dialog)
+  
+  match: CurrencyInfo(this)
+  
+  // param을 통하여 dialog macro로 데이터를 전달 가능
+  template-macro (SuccessResult){
+    param (info){
+      expression (this)
+    }  
+  }
+}

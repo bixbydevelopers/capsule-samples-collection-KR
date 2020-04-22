@@ -1,0 +1,8 @@
+enum (Operator) {
+  description (가능한 모든 Value들을 나열할 수 있을 경우 사용하는 문자열 자료형입니다)
+  // 참조 (https://bixbydevelopers.com/dev/docs/reference/type/enum)
+  symbol (plus)
+  symbol (subtract)
+  symbol (multiplication)
+  symbol (division)
+}

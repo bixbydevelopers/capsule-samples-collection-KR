@@ -1,0 +1,4 @@
+train (t-fatlr5z9azqlil55aem4go6w5) {
+  utterance ("[g:StoreInfo:continue] (경기도)[v:geo.LevelOneDivisionName] (광주)[v:geo.LocalityName]는 어때?")
+  plan (fY5JCsJAEEW/Y9SVCzeCZOXW4MILOCAIoqAnaJIyFiTdku40enszkAQF3VW992vACK4WsU5l6NFTxI+ItiqglXc1KqGDvKkffs8yKDJY/vdzX0ltEsHSLDSJxL9jYtl6ISnvWvQXCllJTCu6STkKPpRbqXUQs+R8nWFLO7ascz+u/FH5ImLzak7kf9R0VufIUnSW9YaTiKmZqfIFHaKFNjroooc+HAwygi/mZD0KioyWdV6hTL8B)
+}

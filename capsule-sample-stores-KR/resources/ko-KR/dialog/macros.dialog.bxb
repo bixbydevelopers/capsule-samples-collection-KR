@@ -1,0 +1,15 @@
+// 여러 상황에서 사용될 수 있는 dialog template를 선언(https://bixbydevelopers.com/dev/docs/dev-guide/developers/refining-dialog.dialog-macros)
+template-macro-def (result_answer) {
+  content {
+  choose (Random) {
+      template("선택하신 결과를 가져왔어요.")
+      template("말씀하신 결과를 가져왔어요.")
+    }
+  }
+}
+
+template-macro-def (no_result) {
+  content {
+    template("문제가 생겼네요. 다시 한번 말씀해주세요.")
+  }
+}

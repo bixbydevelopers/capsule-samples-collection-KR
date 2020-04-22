@@ -1,0 +1,16 @@
+action (SelectCategory) {
+  description (유저가 카테고리를 선택하도록 합니다)
+  type(Constructor)
+  collect {
+    input (category){
+      type (QuizCategory)
+      min (Required) max (One)
+      default-init{
+        intent{
+          goal: GetCategories
+        }          
+      }
+    }
+  }
+  output (QuizCategoryNum)
+}

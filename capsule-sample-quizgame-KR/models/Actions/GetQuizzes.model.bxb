@@ -1,0 +1,59 @@
+action (GetQuizzes) {
+  description (API를 통하여 유저 선택에 맞는 퀴즈 리스트를 가져옵니다)
+  type(Constructor)
+  
+  collect {
+    input (category) {
+      type (QuizCategoryNum)
+      min (Required) max (One)
+      default-init{
+        intent{
+          goal: SelectCategory
+        }
+      }
+    }
+    input (type) {
+      type (QuizType)
+      min (Required) max (One)
+      default-init{
+        intent{
+          goal: SelectType
+        }
+      }
+    }
+  }
+  output (ProgressInfo){
+    throws {
+      error (ServerProblem) {
+        on-catch {
+          halt {
+            dialog {
+              template-macro (unstable)
+            }
+          }
+        }
+      }
+      error (NODATA) {
+        on-catch {
+          replan{
+            dialog{
+              template ("해당 섹션에는 문제 수가 부족하네요. 다른 섹션으로 골라주세요.")
+            }
+            intent{
+              goal: ShowQuiz
+            }
+          }
+        }
+      }
+      unknown-error {
+        on-catch {
+          halt {
+            dialog {
+              template-macro (no_result)
+            }
+          }
+        }
+      }
+    }
+  }
+}

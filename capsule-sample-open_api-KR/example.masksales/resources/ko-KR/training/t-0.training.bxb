@@ -1,0 +1,5 @@
+train (t-0ee0vxewe8r02nfxz3ur7cpuz) {
+  utterance ([g:GeoSearch] 현재 위치에서 가까운 마스크 판매점 알려줄래)
+  plan (Y2BiUCrISaxML8ovzUvRy00szi5OzEkt1gtKLS7NKSkOTk0sSs5gkMOqxj01HyrPCIQMUAwkAQ==)
+  last-modified (1585641570305)
+}

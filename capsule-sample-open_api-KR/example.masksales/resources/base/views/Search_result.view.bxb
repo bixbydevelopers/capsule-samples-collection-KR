@@ -1,0 +1,39 @@
+result-view {
+	// 결과 화면을 보여주고 싶은 output concept을 지정
+	match: ResultsSearch(this)
+	
+	message {
+		if (this[0].isNearFlag == true) {
+			template ("내 주변 공적 마스크 판매처 입니다.")
+		} else-if(this[0].isNearFlag == false) {
+			template ("해당 주소 주변 공적 마스크 판매처 입니다.")
+		}
+	}
+	
+	render {
+		if (size(this) == 1) { //결과가 1개 - 사용자가 리스트를 선택했거나 혹은 정말 결과가 1개일 때
+			layout {
+				layout-macro (SellerInfo) { // 판매처 정보 
+					param(info) {
+						expression (this)
+					}
+				}
+				layout-macro (SellerMap) { // 지도 정보
+					param(info) {
+						expression (this)
+					}
+				}
+			}			
+		} else { // 결과가 여러개 - 리스트 보여줌
+			list-of (this) {
+				where-each (item) {
+					layout-macro (SellerList) { // 판매처 정보 
+						param(seller) {
+							expression (item)
+						}
+					}
+				}
+			}
+		}
+	}
+}

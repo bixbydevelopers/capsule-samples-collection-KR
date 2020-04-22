@@ -1,0 +1,8 @@
+train (t-bpc31j4zrrw87e9eatl5vsi5q) {
+  utterance ("[g:StoreInfo] (광주)[v:geo.LocalityName] 맛집 찾아줘")
+  plan (fY67CsJAEEVv4ruzsLFJZWuw8Ad8IAhiYb5gyY5xINmV7Cbo37uJLKKixcDMOZeZwQiREYWpVBbTTRTXnDZa0jJOrC5pr876h9+xkm0Gi/9+lmplbClY2bkhUaYXTGqu44x0nLTziTLWClNP1xXn8k1FXq1kwYqbdZZr2nLNpvFj7w86FTnb++tE88c39eQoCsIQAUJ00EUPfQzcjA8SAC2DY88+dOVyDw==)
+}
+train (t-bpsqfi1jr57va5o4avcnywqhl) {
+  utterance ("[g:StoreInfo] (경상도)[v:geo.LevelOneDivisionName] 맛집 추천해줘")
+  plan (jc7JCsIwFAXQ6zxtXShIV24ULAr+gAOCIAr2C4J91gdtIk0b/HzbSnEWA4Hknkvy0IKlRaBj6dl0EcHZp4VyaWo7kQppLY/qi69YulkH49/ePyipo1CwjEaaRHg4oW3Y2B4p28nue/JYSXTzdB6z7z6RldPMDVhy+lzEhpZsWKfeyX1DhvydvEsvl3SeNx380sfBBYZ/Vyf3T197WxEQmiigiBLKqKCKGupoJBk+pAUgy5Hkt3O6islO+lc=)
+}

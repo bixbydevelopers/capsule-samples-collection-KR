@@ -1,0 +1,25 @@
+capsule {
+  id (example.trip)
+  version (1.0.0)
+  format (3)
+  targets {
+    target (bixby-mobile-ko-KR)
+  }
+  capsule-imports {
+    import (viv.geo) {as (geo) version (9.26.19)}
+    import (viv.time) {as (time) version-from (geo)}
+  }  
+  runtime-version(5) 
+  store-countries {
+    only {
+      allow (KR)
+    }
+  }
+  store-sections {
+    section (TravelAndTransportation)
+    section (Local)
+  }
+	permissions {
+    device-location-access
+	}  
+}

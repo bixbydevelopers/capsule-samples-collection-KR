@@ -1,0 +1,13 @@
+endpoints {
+  action-endpoints {
+    action-endpoint (GetRestautantList) {
+      accepted-inputs (self, location)
+      local-endpoint (GetRestautantList.js)
+    }
+
+    action-endpoint (GetLocation) {
+      accepted-inputs ()
+      local-endpoint (GetLocation.js)
+    }
+  }
+}

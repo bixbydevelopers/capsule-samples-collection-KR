@@ -1,0 +1,4 @@
+train (t-6fd31mrzlikqxb12e9z72t8ld) {
+  utterance ("[g:StoreInfo:continue] (인계동)[v:geo.PlaceName]은 어때?")
+  plan (Y2BhkChOzC0uzUvXKy7JL0ot1gsGUZ55afkYMm6ZeSlgWQZ5XDJ1xamJRckZDIJlmWV66an5egE5icmpfom5qQzMDIwMTECSAUwzMkAAExADxQA=)
+}

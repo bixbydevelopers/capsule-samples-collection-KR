@@ -1,0 +1,16 @@
+endpoints {
+  action-endpoints {
+    action-endpoint (AddrSearch) {
+      accepted-inputs (regionName)
+      local-endpoint (addrSearch.js)
+    }
+    action-endpoint (GeoSearch) {
+      accepted-inputs (point)
+      local-endpoint (geoSearch.js)
+    }
+    action-endpoint (MapPunchOut) {
+      accepted-inputs (resultPoint, sellerName)
+      local-endpoint (mapPunchOut.js)
+    }
+  }
+}

@@ -1,0 +1,12 @@
+endpoints {
+  action-endpoints {
+    action-endpoint (TourInfoLocation) {
+      accepted-inputs (point)
+      local-endpoint (tourInfoLocation.js)
+    }
+    action-endpoint (OpenBrowser) {
+      accepted-inputs (point)
+      local-endpoint (openBrowser.js)
+    }
+  }
+}

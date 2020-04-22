@@ -1,0 +1,3 @@
+text (SellerAddr) {
+  description (판매처 주소)
+}

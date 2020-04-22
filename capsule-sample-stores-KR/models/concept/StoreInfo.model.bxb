@@ -1,0 +1,11 @@
+structure (StoreInfo) {
+  property (location) {
+    type (LocationName)
+    min (Required) max (One)
+  }
+  
+  property (name) {
+    type (StoreName)
+    min (Required) max (One)
+  }
+}

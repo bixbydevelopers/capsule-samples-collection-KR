@@ -1,0 +1,42 @@
+result-view{
+  match: ProgressInfo(this)
+  
+  message{
+    if(!exists(this)){
+      template-macro (no_result)
+    }else{
+      if(this.nowNum < 10){
+        template-macro (show_quiz){
+          param (quiz){
+            expression (this.quizzes[this.nowNum])
+          }  
+        }
+      }else{
+        template-macro (show_result){
+          param (result){
+            expression (this)
+          }  
+        }
+      }
+    }
+  }
+  
+  render{
+    if(exists(this)){
+      if(this.nowNum < 10){
+        layout-macro (QuizInfo) {
+          param (quiz) {
+            expression (this) // 결과 객체를 layout으로 전달
+          }
+        }
+      }else{
+        layout-macro (ShowResult) {
+          
+          param (result) {
+            expression (this)
+          }
+        }
+      }
+    }
+  }
+}

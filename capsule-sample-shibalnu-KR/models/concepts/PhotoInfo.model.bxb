@@ -1,0 +1,6 @@
+structure (PhotoInfo) {
+  property (photos) {
+    type (Photo)
+    min (Required) max (Many)
+  }
+}

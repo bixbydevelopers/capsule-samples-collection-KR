@@ -1,0 +1,7 @@
+action (GetTypes) {
+  description (퀴즈 타입 리스트를 가져옵니다)
+  type(Constructor)
+  collect {
+  }
+  output (QuizType)
+}

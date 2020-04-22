@@ -1,0 +1,6 @@
+dialog (Progress) {
+  description (match에 설정한 model에 대한 상태에 따라 나타낼 dialog를 설정합니다)
+  
+  match: DetailData
+  template-macro(detailProgress)
+}

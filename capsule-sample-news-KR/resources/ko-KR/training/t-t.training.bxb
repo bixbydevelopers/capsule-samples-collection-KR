@@ -1,0 +1,5 @@
+train (t-t7h3c1sqtcc1elwzg25vwlanw) {
+  utterance ("[g:GetNewsDetail] (비즈니스)[v:Topic:Business] 뉴스 찾아줘")
+  plan (Y2BlEE+tSMwtyEnVy0stL9ZzSS1JzMxxSSxJZJBCkXBPLfED0hB5BkEUOZAEgwg25QxCKKIh+QWZyQwsDIwMTAzMQJoBymIEs0CACUgDxQE=)
+  last-modified (1571895714517)
+}

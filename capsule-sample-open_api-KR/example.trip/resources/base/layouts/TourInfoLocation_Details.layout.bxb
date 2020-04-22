@@ -1,0 +1,72 @@
+layout {
+  match: TourInfoLocationResult (tourinfolocation)
+  mode (Details)
+
+  content {
+    section {
+      content {
+        layout-macro (tourinfolocation-compound-card) {
+          param (tourinfolocation) { expression (tourinfolocation) }
+        }
+      }
+    }
+    section {
+      content {
+        partitioned {
+          content {
+            if (exists(tourinfolocation.addr1) && exists(tourinfolocation.addr2)) {
+              paragraph {
+                value ("주소: #{value(tourinfolocation.addr1)} #{value(tourinfolocation.addr2)}")
+                style (Detail_M)
+              }   
+            }
+            if (exists(tourinfolocation.tel)) {
+              paragraph {
+                value ("전화번호: #{value(tourinfolocation.tel)}")
+                style (Detail_M)
+              }
+            }
+            if (exists(tourinfolocation.dist)) {
+              paragraph {
+                value ("현재 위치에서 거리: #{value(tourinfolocation.dist)} 미터")
+                style (Detail_M_Soft)
+              }
+            }
+          }
+        }
+      }
+    }
+    section {
+      content {
+        map-card {
+          aspect-ratio (21:9)
+          title-area {
+            slot1 {
+              text {
+                value ("위치를 보려면 클릭하세요.")
+                style (Title_XS)
+              }
+            }
+          }
+          markers {
+            marker {
+              geo (tourinfolocation.point)
+              icon ("/images/green-map-marker.png")
+              width (15)
+              height (20)
+              anchor-x (5)
+              anchor-y (15)
+              rotation (0)
+            }
+          }
+          on-click {
+            intent {
+              goal: OpenBrowser
+              value: $expr(tourinfolocation.point)
+            }
+          }  
+        }   
+      }
+    }        
+  }
+}

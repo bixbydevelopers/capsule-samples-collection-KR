@@ -1,0 +1,92 @@
+vocab(QuizCategory){
+  "Any Category"{
+    "아무 카테고리"
+    "아무거나"
+  }
+  "General Knowledge"{
+    "상식"
+  }
+  "Books"{
+    "책"
+    "도서"
+  }
+  "Film"{
+    "영화"
+  }
+  "Music"{
+    "음악"
+  }
+  "Musicals & Theatres"{
+    "뮤지컬"
+    "연극"
+  }
+  "Television"{
+    "텔레비전"
+    "티비"
+  }
+  "Video Games"{
+    "비디오 게임"
+  }
+  "Board Games"{
+    "보드 게임"
+  }
+  "Science & Nature"{
+    "자연 과학"
+    "자연"
+  }
+  "Computers"{
+    "컴퓨터"
+    "컴퓨터 과학"
+  }  
+  "Mathematics"{
+    "수학"
+  }  
+  "Mythology"{
+    "신화"
+  }  
+  "Sports"{
+    "스포츠"
+  }  
+  "Geography"{
+    "지질학"
+  }  
+  "History"{
+    "역사"
+  }  
+  "Politics"{
+    "정치"
+  }  
+  "Art"{
+    "예술"
+    "아트"
+  }  
+  "Celebrities"{
+    "셀럽"
+    "유명인"
+  }  
+  "Animals"{
+    "동물"
+  }  
+  "Vehicles"{
+    "차"
+    "자동차"
+  }  
+  "Comics"{
+    "만화"
+    "코믹스"
+  }  
+  "Gadgets"{
+    "기계"
+    "도구"
+    "가젯"
+  } 
+  "Japanese Anime & Manga"{
+    "애니"
+    "망가"
+    "일본 만화"
+  }  
+  "Cartoon & Animations"{
+    "애니메이션"
+    "카툰"    
+  }
+}

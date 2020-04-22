@@ -1,0 +1,11 @@
+structure (SimpleData) {
+  description (Simple Data DTO)
+  property (id) {
+    type (Id)
+    min (Required) max (One)
+  }
+  property (message) {
+    type (Message)
+    min (Optional) max (One)
+  }
+}

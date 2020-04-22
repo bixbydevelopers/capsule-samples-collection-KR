@@ -1,0 +1,4 @@
+train (t-rq3s47scuaizyq9jnyzn1da3w) {
+  utterance ([g:PhotoInfo] 시바견 사진 보여줘)
+  plan (Y2BkkCpOzC0uzUvXK87ITEr0zCvVC8jIL8n3zEvLZwABRhABAA==)
+}

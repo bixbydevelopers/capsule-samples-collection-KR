@@ -1,0 +1,5 @@
+train (t-11mz0bn4d3gefqusjtskge8l6) {
+  utterance ("[g:AddrSearch] 마스크 판매하고있는 (공덕동)[v:geo.SearchTerm] 약국 알려줘")
+  plan (Y2BjUCrISaxML8ovzUvRy00szi5OzEkt1gtKLS7NKSkOTk0sSs5gkMeqxjElpQiqQKgss0wvPTVfzy8xNzUlID8zr4RBGCbmWFqSX1yanp5aXMIgiUWwrjwjtSgVYQbEzJDUolwGVgZGBiYGZgYWIIsBymYG0gxgDAJMQBZQDgA=)
+  last-modified (1585637314795)
+}

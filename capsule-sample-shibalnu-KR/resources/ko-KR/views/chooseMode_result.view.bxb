@@ -1,0 +1,19 @@
+// 결과 화면에 대한 보여주는 방식을 설정 (https://bixbydevelopers.com/dev/docs/reference/type/result-view)
+result-view {
+  // 결과 화면을 보여주고 싶은 output concept을 지정
+  match: ModeInfo(this)
+
+  message { 
+    template-macro (chooseOneMode)
+  }
+
+  render {
+    if (size(this) == 1) {
+      layout-macro (modeInfo) {
+        param (mode) { // chooseMode_result_macro.layout.bxb의 param명을 기입
+          expression (this) // 결과 객체를 layout으로 전달
+        }
+      }
+    }
+  }
+}

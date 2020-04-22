@@ -1,0 +1,11 @@
+action (SelectAnswer) {
+  description (유저가 퀴즈의 문제를 선택하도록 합니다)
+  type(Constructor)
+  collect {
+    input (quiz) {
+      type (QuizInfo)
+      min (Required) max (One)
+    }
+  }
+  output (QuizInfo)
+}

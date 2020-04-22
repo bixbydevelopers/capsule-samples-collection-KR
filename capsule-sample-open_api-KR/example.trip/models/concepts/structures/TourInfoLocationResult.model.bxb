@@ -1,0 +1,38 @@
+structure (TourInfoLocationResult) {
+  property (addr1) {
+    type (Addr1)
+    min (Optional) max (Many)
+  }
+  property (addr2) {
+    type (Addr2)
+    min (Optional) max (Many)
+  }
+  property (contentid) {
+    type (ContentId)
+    min (Optional) max (Many)
+  }  
+  property (dist) {
+    type (Dist)
+    min (Optional) max (Many)
+  }
+  property (firstimage) {
+    type (FirstImage)
+    min (Optional) max (Many)
+  }
+  property (firstimage2) {
+    type (FirstImage2)
+    min (Optional) max (Many)
+  }
+  property (point) {
+    type (Point)
+    min (Optional) max (Many)
+  }
+  property (tel) {
+    type (Tel)
+    min (Optional) max (Many)
+  }          
+  property (title) {
+    type (Title)
+    min (Optional) max (Many)
+  }  
+}

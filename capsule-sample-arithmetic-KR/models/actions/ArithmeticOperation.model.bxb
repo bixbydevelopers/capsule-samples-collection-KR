@@ -1,0 +1,34 @@
+action (ArithmeticOperation) {
+  description (산술계산을 진행하는 action입니다)
+  type(Calculation)
+  collect { // 예) 3[leftOperand] 더하기[opertor] 4[rightOperand]는 뭐야?
+    input (leftOperand) { // 예) String[LeftOperand] str[leftOperand] = new String();[LeftOperand]
+      type (LeftOperand)
+      min (Required) max (One)
+    }
+    
+    input (rightOperand) {
+      type (RightOperand)
+      min (Required) max (One)
+    }
+    
+    input(operator){
+      type(Operator)
+      min (Required) max (One)
+    }
+  }
+  
+  output (Result){
+    throws{
+      unknown-error{
+        on-catch {
+          halt {
+            dialog {
+              template ("문제가 생겼네요. 다시 한번 말씀해주세요.")
+            }
+          }
+        }
+      }
+    }
+  }
+}

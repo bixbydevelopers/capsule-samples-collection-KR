@@ -1,0 +1,24 @@
+endpoints {
+  // action과 그에 맞는 자바스크립트를 매핑합니다.
+  action-endpoints {
+    action-endpoint (GetNews) {
+      accepted-inputs (topic)
+      local-endpoint (GetNews.js)
+    }
+    
+    action-endpoint (GetNewsDetail) {
+      accepted-inputs (news)
+      local-endpoint (GetNewsDetail.js)
+    } 
+    
+    action-endpoint (OpenBrowser) {
+      accepted-inputs (url, tel)
+      local-endpoint (OpenBrowser.js)
+    } 
+
+    action-endpoint (GetNewsByTime) {
+      accepted-inputs (dateTimeExpression, dayOfWeek, detachedTime)
+      local-endpoint (GetNewsByTime.js)
+    }
+  }
+}

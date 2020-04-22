@@ -1,0 +1,16 @@
+capsule-info {
+  display-name (급식알리미)
+  developer-name (lahm)
+  icon-asset (images/bixby_logo.png)
+  description ("__DESCRIPTION__")
+  website-url (https://example.com/)
+  terms-url (https://example.com/terms-of-use/)
+  search-keywords{
+    keyword (급식)
+    keyword (고등학교)
+  }
+  dispatch-name (급식알리미)
+  dispatch-aliases{
+    alias (급식알림이)
+  }
+}

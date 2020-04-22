@@ -1,0 +1,42 @@
+template-macro-def (no_result) {
+  content {
+    template("문제가 생겼네요. 다시 한번 말씀해주세요.")
+  }
+}
+
+template-macro-def (unstable) {
+  content {
+    template("현재 서비스가 불안정합니다. 이 서비스는 나중에 다시 사용하여 주세요.")
+  }
+}
+
+template-macro-def (show_quiz) {
+  params {
+    param(quiz) {
+      type (QuizInfo)
+      min (Required) max (One)
+    }
+  }
+  
+  content {
+    template("[#{value(quiz.id)}. #{value(quiz.question)}]"){
+      
+      // 빅스비가 읽어주는 문장을 변경 가능 (https://bixbydevelopers.com/dev/docs/reference/type/dialog.template.speech)
+      speech ("문제를 풀어보세요.")
+    }
+  }
+}
+
+template-macro-def (show_result) {
+  params {
+    param(result) {
+      type (ProgressInfo)
+      min (Required) max (Many)
+    }
+  }
+  
+  content {
+    template("[#{value(result.totalNum)} 중에서  #{value(result.correctNum)} 개 맞았습니다.]"){
+    }
+  }
+}

@@ -1,0 +1,15 @@
+train (t-pawod5fi4shnj5n3euk3n2gbp) {
+  utterance ([g:GeoSearch] 근처에 마스크 파는 곳 어디야)
+  plan (Y2BiUCrISaxML8ovzUvRy00szi5OzEkt1gtKLS7NKSkOTk0sSs5gkMOqxj01HyrPCIQMUAwkAQ==)
+  last-modified (1585637315079)
+}
+train (t-px0xo8633fb4vv2tbzqv7js94) {
+  utterance ("[g:AddrSearch] (봉천동)[v:geo.SearchTerm]에서 마스크 살 수 있는 곳 찾아줘")
+  plan (Y2BjUCrISaxML8ovzUvRy00szi5OzEkt1gtKLS7NKSkOTk0sSs5gkMeqxjElpQiqQKgss0wvPTVfzy8xNzUlID8zr4RBGCbmWFqSX1yanp5aXMIgiUWwrjwjtSgVYQbEzJDUolwGVgZGBiYGZgYWIIsBymYG0gxgDAJMQBZQDgA=)
+  last-modified (1585637315117)
+}
+train (t-px4auo13wk8qidaxirqnlt062) {
+  utterance ([g:GeoSearch] 마스크 살래)
+  plan (Y2BiUCrISaxML8ovzUvRy00szi5OzEkt1gtKLS7NKSkOTk0sSs5gkMOqxj01HyrPCIQMUAwkAQ==)
+  last-modified (1585637315044)
+}

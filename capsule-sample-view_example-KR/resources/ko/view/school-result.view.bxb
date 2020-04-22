@@ -1,0 +1,72 @@
+result-view {
+	match : schoolInfo(schoolinfo)
+	
+	message{
+		if (size(schoolinfo) > 1){
+			template ("어떤 학교의 급식을 알려드릴까요??")
+		}
+		else{
+			template("#{value(schoolinfo.schoolname)}의 급식 정보입니다.")
+		}
+	}
+	
+	render{
+		if (size(schoolinfo) > 1){ // Result가 1개 이상일 경우
+			list-of (schoolinfo){
+				where-each (info){
+					thumbnail-card{
+						title-area{
+							halign (Start)
+							slot1{
+								text{
+									style(Title_M)
+									value("#{value(info.schoolname)}")
+								}
+							}
+							slot2{
+								paragraph{
+									style(Detail_M_Soft)
+									value("#{value(info.address)}")
+								}
+							}
+						}
+						image-url {
+							template ("#{value(info.url)}")
+						}
+						image-position (End)
+					}
+				}
+			}
+		}
+		else{ // Result가 1개 선택된 경우
+			layout{
+				section{
+					title{
+						template ("#{value(schoolinfo.date)} 중식")
+					}
+					content{
+						image{
+							url(images/bixbydevelopers.jpg)
+						}
+						partitioned{
+							content{
+								for-each (schoolinfo.dish){
+									as(side){
+										if(exists(side)){
+											single-line{
+												text{
+													value("#{value(side)}")
+													style(Detail_L)
+												}
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

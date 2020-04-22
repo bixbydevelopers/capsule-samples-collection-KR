@@ -1,0 +1,4 @@
+train (t-g894jz1f6a4glcsxm33oftcqe) {
+  utterance ("[g:StoreInfo:continue] (교동)[v:geo.PlaceName]은?")
+  plan (Y2BhkCtOzC0uzUvXS61IzC3ISXXOT0k10QsuyS9K9cxLy8ch75aZlwJWw2CAX14lOT+vuKQoMTOvRLc4NbEoOYNBsCyzTC89NV8vICcxOdUvMTeVgZmBkYEJSDKAaUYGCGACYqAYAA==)
+}

@@ -1,0 +1,51 @@
+// 결과에 대한 보여주는 방식을 설정 (https://bixbydevelopers.com/dev/docs/reference/type/result-view)
+result-view {
+  // 결과 화면을 보여주고 싶은 output concept을 지정
+  match: CurrencyInfo(this)
+  
+  message {
+    // 결과 화면에 보여줄 dialog를 설정
+    if(!exists(this)){
+      template-macro (NolocalDialog)
+    }else{
+      template-macro (SuccessResult){
+        param (info){
+          expression (this)
+        }  
+      }
+    }
+  }
+  
+  render {
+    // 어떻게 화면을 그릴 것인가에 대하여 설정
+    // 결과 값 갯수에 따라 다르게 보여주도록 함
+    if (size(this) == 1) {
+      // 'layout-match' 또는 'layout-macro'를 사용 가능 (https://bixbydevelopers.com/dev/docs/dev-guide/developers/refining-dialog.dialog-macros)
+      
+      layout-match (this){
+        mode (Details)
+      }
+      
+    }else {
+      list-of (this) {
+        //리스트화 된 객체들중 하나를 클릭하였을 경우, details 뷰모드로 넘어가는 것을 방지
+        has-details (true)
+        
+        default-sort-order {
+          sorting{
+            // 유저가 선호하는 순서대로 정렬 (https://bixbydevelopers.com/dev/docs/dev-guide/developers/learning.preference-learning)
+            by-preferences
+          }
+        }
+        
+        where-each (info) {
+          layout-macro (currencyInfo_summary){         
+            param(info){ // CurrencyInfo_Summary_Macro.layout.bxb의 param명을 기입
+              expression (info) // 결과 객체들중 하나를 layout으로 전달
+            }
+          }
+        }
+      }
+    }
+  }
+}

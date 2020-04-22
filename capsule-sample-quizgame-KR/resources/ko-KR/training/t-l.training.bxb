@@ -1,0 +1,5 @@
+train (t-lsuk549e33uyfgt97p0gvfah2) {
+  utterance ([g:ShowQuiz] 게임 시작)
+  plan (Y2BmkE2tSMwtyEnVKyzNrEpPzE3VCyjKTy9KLS72zEvLZ5DEkA7OyC8PBHII6WRiYARiBiDJyMAAowE=)
+  last-modified (1562119335487)
+}

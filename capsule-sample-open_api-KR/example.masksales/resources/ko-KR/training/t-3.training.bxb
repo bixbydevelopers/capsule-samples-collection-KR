@@ -1,0 +1,5 @@
+train (t-3nfw4av8mzwe2u7ro7dki2v4o) {
+  utterance ("[g:AddrSearch] (상암동)[v:geo.SearchTerm] 마스크 파는 곳 검색해줘")
+  plan (Y2BjUCrISaxML8ovzUvRy00szi5OzEkt1gtKLS7NKSkOTk0sSs5gkMeqxjElpQiqQKgss0wvPTVfzy8xNzUlID8zr4RBGCbmWFqSX1yanp5aXMIgiUWwrjwjtSgVYQbEzJDUolwGVgZGBiYGZgYWIIsBymYG0gxgDAJMQBZQDgA=)
+  last-modified (1585637314923)
+}

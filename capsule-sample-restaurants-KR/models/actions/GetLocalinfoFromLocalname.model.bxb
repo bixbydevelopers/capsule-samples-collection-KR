@@ -1,0 +1,11 @@
+action (GetLocalinfoFromLocalname) {
+  description ("지역명에 대한 좌표등의 데이터를 가져옵니다.")
+  type(Search)
+  collect {
+    input (point) {
+      type (geo.NamedPoint)
+      min (Required) max (One)
+    }
+  }
+  output (geo.GeoPoint)
+}

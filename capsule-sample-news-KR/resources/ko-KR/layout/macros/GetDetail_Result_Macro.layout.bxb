@@ -1,0 +1,75 @@
+layout-macro-def (info_summary) {
+  params {
+    param (info) {
+      type (DetailData)
+      min (Optional) max (Many)
+    }
+  }
+  content {
+    section{
+      content{
+        compound-card{
+          content{
+            paragraph {
+              value {
+                  template ("[#{value(info.title)}]")
+              }
+              style (Detail_L)
+            }
+            divider
+            single-line{
+              text{
+                value{
+                  template ("[#{value(info.date)}]")
+                }
+                style (Detail_M)
+              }
+            }
+            single-line{
+              text{
+                value{
+                  template ("[#{value(info.time)}] [#{value(info.dayofweek)}]")
+                }
+                style (Detail_M)
+              }
+            }
+          }
+        }
+
+        divider
+        cell-card {
+          slot2 {
+            content{
+              primary("앱에서 열기")
+              secondary("[#{value(info.url)}]")
+            }
+          }
+          on-click {
+            intent {
+              goal: OpenBrowser
+              value: $expr(info.url)
+            }
+          }
+        }
+        divider
+        if(info.tel != ''){
+          cell-card {
+            slot2 {
+              content{
+                primary("전화 걸기")
+                secondary("#{value(info.tel)}")
+              }
+            }
+            on-click {
+              intent {
+                goal: OpenBrowser
+                value: $expr(info.tel)
+              }
+            }
+          }
+
+        }       
+      }
+    }
+  }
+}

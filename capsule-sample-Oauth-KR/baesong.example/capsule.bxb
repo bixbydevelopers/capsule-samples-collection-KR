@@ -1,0 +1,20 @@
+capsule {
+  id (baesong.example)
+  version (0.1.0)
+  format (3)
+  targets {
+    target (bixby-mobile-ko-KR)
+  }
+  
+  runtime-version (2)
+
+  store-sections{
+    section (Local)
+  }
+
+  store-countries{
+    only{
+      allow (KR)
+    }
+  }
+}

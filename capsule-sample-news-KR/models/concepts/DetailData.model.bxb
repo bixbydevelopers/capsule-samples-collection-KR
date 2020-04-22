@@ -1,0 +1,13 @@
+structure (DetailData) {
+  // concept을 상속 (https://bixbydevelopers.com/dev/docs/reference/type/structure.extends)
+  extends (News)
+  
+  property (time) {
+    type (TimeText)
+    min (Optional) max (One)
+  }
+  property (dayofweek) {
+    type (DayText)
+    min (Optional) max (One)
+  }
+}

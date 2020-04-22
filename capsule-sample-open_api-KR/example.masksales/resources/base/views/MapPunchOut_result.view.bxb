@@ -1,0 +1,7 @@
+result-view {
+  match : PunchOutUrl (this)
+
+  app-launch {
+    payload-uri ("[#{value(this)}]")
+  }
+}

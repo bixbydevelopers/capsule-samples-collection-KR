@@ -1,0 +1,15 @@
+capsule-info {
+  display-name  (뉴스보기)
+  developer-name  (뉴스보기)
+  icon-asset  (/img/bixby_launcher.png)
+  description ("간단한 뉴스 capsule 입니다")
+  website-url  (https://github.com/bixbydevelopers/capsule-sample-news-KR)
+  terms-url  (https://github.com/bixbydevelopers/capsule-sample-news-KR/blob/master/LICENSE)
+  dispatch-name (뉴스보기)
+  dispatch-aliases {
+    alias (뉴스)
+  }
+  search-keywords{
+    keyword (예제)
+  }
+}

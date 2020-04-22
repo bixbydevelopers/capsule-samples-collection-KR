@@ -1,0 +1,17 @@
+action (GetTargetCurrency) {
+  description (타겟이 되는 통화 정보를 가져옵니다)
+  type(Constructor)
+  collect {
+    input (currencySymbol) {
+      type (CurrencySymbol)
+      min (Required) max (One)
+    }
+  }
+  output (TargetCurrency){
+    evaluate{
+      TargetCurrency{
+        currencySymbol: $expr(currencySymbol)
+      }
+    }
+  }
+}

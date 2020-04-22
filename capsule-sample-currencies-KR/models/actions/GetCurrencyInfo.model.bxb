@@ -1,0 +1,58 @@
+action (GetCurrencyInfo) {
+  description (환율 정보 리스트를 외부 API로부터 가져옵니다)
+  type(Search)
+  collect {
+    input (value) {
+      type (money.CurrencyValue) // 라이브러리 Money capsue의 concept을 사용
+      min (Optional) max (One)
+    }
+    
+    input (dateTime) {
+      type (time.DateTimeExpression) // 라이브러리 Time capsue의 concept을 사용
+      min (Optional) max (One)
+    }
+    
+    input (baseCurrency) {
+      type (BaseCurrency)
+      min (Optional) max (One)
+    }
+    
+    input (targetCurrency) {
+      type (TargetCurrency)
+      min (Optional) max (One)
+    }
+  }
+  
+  output (CurrencyInfo){
+    // 결과에 대한 예외처리하는 부분, 자바스크립트에서 던진 에러를 처리
+    throws{
+      error (NoInfo){
+        on-catch {
+          halt {
+            dialog {
+              template-macro (ProblemDialog)
+            }
+          }
+        }
+      }
+      error (NoLocal){
+        on-catch {
+          halt {
+            dialog {
+              template-macro (NolocalDialog)
+            }
+          }
+        }
+      }
+      unknown-error{
+        on-catch {
+          halt {
+            dialog {
+              template-macro (ProblemDialog)
+            }
+          }
+        }
+      }
+    }
+  }
+}

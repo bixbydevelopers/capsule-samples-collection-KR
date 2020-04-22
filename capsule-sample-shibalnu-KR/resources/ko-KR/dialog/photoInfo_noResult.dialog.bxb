@@ -1,0 +1,7 @@
+dialog (NoResult) {
+  description (match에 설정한 model에 대한 상태가 결과가 없는(NoResult) 상황일 경우, 나오게 할 dialog를 설정합니다. )
+  // 참조(https://bixbydevelopers.com/dev/docs/dev-guide/developers/refining-dialog.intro-dialog)
+  
+  match: PhotoInfo
+  template-macro(chooseOneMode)
+}

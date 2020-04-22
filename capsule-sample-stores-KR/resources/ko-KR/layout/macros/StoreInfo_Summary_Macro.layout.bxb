@@ -1,0 +1,19 @@
+layout-macro-def (storeInfo_summary) {
+  params {
+    param (info) {
+      type (StoreInfo)
+      min (Required) max (One)
+    }
+  }
+  content {
+    cell-card {
+      slot2 {
+          content {
+              order (PrimarySecondary)
+              primary ("#{value(info.name)}")
+              secondary ("위치: #{value(info.location)}")
+          }
+        }
+     }
+  }
+}

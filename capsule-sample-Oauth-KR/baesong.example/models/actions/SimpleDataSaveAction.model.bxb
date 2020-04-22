@@ -1,0 +1,11 @@
+action (SimpleDataSaveAction) {
+  type(Commit)
+  description (save simple data to resource server)
+  collect{
+    input (message) {
+      type (Message)
+      min (Required) max (One)
+    }
+  }
+  output (JsonResult)
+}

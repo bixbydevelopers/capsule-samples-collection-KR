@@ -1,0 +1,4 @@
+train (t-gyz1oqjzeq4w0g23jszecs6tv) {
+  utterance ("[g:CurrencyInfo] (100)[v:money.CurrencyValue]{[g:BaseCurrency] (달러)[v:CurrencySymbol:USD]}에 대한 환율 보여줘")
+  plan (Y2BjUChOzC0uzUvXS61IzC3Icc5PSTXXcy4tKkrNS670zEvLZ1DGpsI9tQRFEVZjnBKLU2GqcBqDokgJn2uCK3OT8nMYxMsyy/Ry8/NSK+EyYYk5pakMrAyMDEwMzAwsQBYDlM0IhAxgDAIsQMwKFGcByQIA)
+}

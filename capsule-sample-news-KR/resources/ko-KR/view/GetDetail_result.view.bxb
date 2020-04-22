@@ -1,0 +1,25 @@
+// 결과 화면에 대한 보여주는 방식을 설정 (https://bixbydevelopers.com/dev/docs/reference/type/result-view)
+result-view {
+  // 결과 화면을 보여주고 싶은 output concept을 지정
+  match: DetailData (this)
+  
+  render{
+    if(size(this) > 1){
+      list-of (this){
+        where-each (item){
+          layout-macro (info_list_summary){
+            param(info){
+              expression (item)
+            }
+          }
+        }
+      }
+    }else{
+      layout-macro (info_summary) {
+        param (info) {
+          expression (this)
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,4 @@
+train (t-b19hzqypgkbtkp9x3b65y6gtt) {
+  utterance ("[g:CurrencyInfo] {[g:BaseCurrency] (엔화)[v:CurrencySymbol:JPY]}와 {[g:TargetCurrency] (위안화)[v:CurrencySymbol:CNY]} 환율이 어때?")
+  plan (Y+BgUChOzC0uzUvXS61IzC3Icc5PSTXXcy4tKkrNS670zEvLZ1DGpsI9tQRFEVZjnBKLU2GqcBqDokgJn2uCK3OT8nOwqwlJLEpHOIlBFYdlaMqIsY6dgZGBiYGZgYWBlYENyGOA8hnBfEYwnwFOsgIxE1gtO5BmYmAFAA==)
+}

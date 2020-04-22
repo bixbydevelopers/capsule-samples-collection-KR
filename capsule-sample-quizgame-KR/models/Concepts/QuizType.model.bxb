@@ -1,0 +1,5 @@
+enum (QuizType) {
+  symbol (랜덤형)
+  symbol (사지선다형)
+  symbol (참, 거짓형)
+}

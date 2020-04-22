@@ -1,0 +1,5 @@
+enum (Topic) {
+  symbol (Business)
+  symbol (Tech)
+  symbol (Restaurant)
+}

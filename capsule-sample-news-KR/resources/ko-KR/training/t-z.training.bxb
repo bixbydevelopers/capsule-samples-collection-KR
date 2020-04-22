@@ -1,0 +1,5 @@
+train (t-zqzvyvi7cz33vd0uq2ohp0ytn) {
+  utterance ("[g:GetNewsByTime] (지난주)[v:time.DateTimeExpression] (수요일)[v:DateQueryType:수요일] 뉴스 가져와")
+  plan (Y2BhEE+tSMwtyEnVy0stL9ZzSS1JzMxxSSxJZJBCkXBPLfED0k6VIZm5qWhyQOWpgaWpRZUhlQWpDNJlmWV6JUBVYHGQcteKgqLU4uLM/DwGZgZGBiYgyQCkQRAC4KIA)
+  last-modified (1571968754919)
+}

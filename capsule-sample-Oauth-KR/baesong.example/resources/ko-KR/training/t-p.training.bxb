@@ -1,0 +1,5 @@
+train (t-p1au72tr02wop0cea26eispbv) {
+  utterance ("[g:SimpleDataSaveAction] 전송 (즐거운 개발 하세요)[v:Message]")
+  plan (Y2BmkEpKTC3Oz0vXS61IzC3ISdXzAvKCUotLc0oYVNDlgjNBlEtiSWJwYlmqY3JJZn4egzi6Kt/U4uLE9FQGJgZGIGYAkowMIADlAwA=)
+  last-modified (1563521855521)
+}

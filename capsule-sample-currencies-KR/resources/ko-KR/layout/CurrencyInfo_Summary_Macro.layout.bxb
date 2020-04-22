@@ -1,0 +1,22 @@
+// 실제로 UI를 그리는 파일 (https://bixbydevelopers.com/dev/docs/dev-guide/developers/building-views.layout-macros)
+// Bixby에서 사용 가능 UI 리스트 (https://bixbydevelopers.com/dev/docs/reference/type/layout-macro-def.content)
+layout-macro-def (currencyInfo_summary) {
+  params {
+    param (info) {
+      type (CurrencyInfo)
+      min (Required) max (One)
+    }
+
+  }
+  content {
+    cell-card {
+      slot2 {
+          content {
+            order (PrimarySecondary)
+            primary ("[#{value(info.nation)}]") // []을 value 값 주위에 감싸줄 경우, 값이 없을때 생략하여 주는 기능함. 만약 대괄호를 사용하고 싶으면 '//[value]'와 같은 방식으로 사용
+            secondary ("[환율: #{value(info.value)} #{value(info.currencySymbol)}]")
+          }
+        }
+     }
+  }
+}

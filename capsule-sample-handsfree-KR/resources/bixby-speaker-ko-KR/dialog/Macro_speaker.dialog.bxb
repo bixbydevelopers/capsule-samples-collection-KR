@@ -1,0 +1,7 @@
+dialog (Result) {
+  match: Restaurant(this)
+  
+  if(size(this) == 1){
+      template ("해당 지역 가게 이름은 #{value(this.name)} 입니다. 이 가게의 소개는 다음과 같습니다. #{value(this.description)}")
+  }
+}

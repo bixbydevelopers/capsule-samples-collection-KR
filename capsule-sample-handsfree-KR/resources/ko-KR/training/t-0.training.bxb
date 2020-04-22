@@ -1,0 +1,5 @@
+train (t-03eu1hff30r9asqr43iibv7cv) {
+  utterance ("[g:Restaurant:prompt] (광주)[v:Location]로 부탁해")
+  plan (Y2BhkEmtSMwtyEnVy0jMSylOK0pN1QtKLS5JLC1KzCthUMaUdU8tgSgoASrwySwuYZDCVOSTn5xYkpmfx8BbllmmV5yak6YXDCQYmBkYGZiAJAOQBkEIYIJgAA==)
+  last-modified (1584666822786)
+}

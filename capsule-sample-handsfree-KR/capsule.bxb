@@ -1,0 +1,33 @@
+capsule {
+  id (example.handsfree)
+  version (0.1.0)
+  format (3)
+  targets {
+    target (bixby-mobile-ko-KR)
+    target (bixby-speaker-ko-KR)
+  }
+
+  runtime-version (3)
+  
+  permissions{
+    user-profile-access
+  }
+  
+  capsule-imports {
+    import (viv.entity) { version(4.0.14) as (entity) }
+    import (viv.core){ as (core) version-from (entity)}
+    import (viv.common) { version(4.0.3) as (common) }
+    import (viv.geo) { as (geo) version-from (entity) }
+    import (viv.self) { version(3.5.215) as (self) }
+  }
+
+  store-sections{
+    section (Local)
+  }
+
+  store-countries{
+    only{
+      allow (KR)
+    }
+  }
+}

@@ -1,0 +1,4 @@
+train (t-yvmg0rml6c4napec0glugzzee) {
+  utterance ("[g:CurrencyInfo] (오늘)[v:time.DateTimeExpression] {[g:TargetCurrency] (불가리아돈)[v:CurrencySymbol:BGN]} 환율 어떄?")
+  plan (Y2BjUChOzC0uzUvXS61IzC3Icc5PSTXXcy4tKkrNS670zEvLZ1DGpsI9tQRFkRI2RSGJRekIdQyqOAxCU6aEz0XBlblJ+TkM0mWZZXolmbmpei6JJakhQIZrRUFRanFxZn4eAysDIwMTAzMDC5DFAGUzAiEDGIMACxCzAsVZQLIA)
+}

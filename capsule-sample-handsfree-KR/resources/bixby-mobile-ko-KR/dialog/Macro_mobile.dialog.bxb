@@ -1,0 +1,17 @@
+// Bixby가 말하는 부분(https://bixbydevelopers.com/dev/docs/reference/type/dialog)
+dialog (Result) {
+  match: Restaurant(this)
+  
+  if(size(this) == 1){
+      if($handsFree){
+        template ("[#{value(this.username)} 님,] 선택하신 지역의 맛집을 확인해보세요!"){
+          speech ("지금 보고 계신 가게 이름은 #{value(this.name)} 입니다. 이 가게의 소개는 다음과 같습니다. #{value(this.description)}")
+        }
+      }else{
+        template ("[#{value(this.username)} 님,] 선택하신 지역의 맛집을 확인해보세요!")   
+      }
+      
+    }else{  
+      template ("[#{value(this.username)} 님,] 선택하신 지역의 맛집들을 가져와 보았어요!")                   
+    }
+}

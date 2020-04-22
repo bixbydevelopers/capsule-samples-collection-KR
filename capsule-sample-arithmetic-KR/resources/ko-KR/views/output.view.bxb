@@ -1,0 +1,18 @@
+// 결과를 화면에 보여주는 방식을 설정하는 파일 (https://bixbydevelopers.com/dev/docs/reference/type/result-view)
+result-view {
+  match: Result(this)
+  
+  message {
+    template ("결과 값을 확인하여 보세요."){
+      speech ("아래에 결과를 확인해보세요!")
+    }
+  }
+  
+  render {
+    layout-macro (result_details) {
+      param (info) {
+        expression (this)
+      }
+    }
+  }
+}

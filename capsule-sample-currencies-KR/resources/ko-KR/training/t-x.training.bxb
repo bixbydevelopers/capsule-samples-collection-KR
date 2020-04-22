@@ -1,0 +1,4 @@
+train (t-xmrpdffm85dmcgffmlwde1hue) {
+  utterance ([g:CurrencyInfo] 환율 정보 알려줘)
+  plan (Y2BkUCxOzC0uzUvXS61IzC3ISXXOT0k113MuLSpKzUuu9MxLy2cAAUYQAQA=)
+}

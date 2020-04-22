@@ -1,0 +1,5 @@
+train (t-9big4xxi15dxknbfgxzing9lb) {
+  utterance ([g:GetRestautantList] 맛집 검색해줘)
+  plan (Y2BhkEmtSMwtyEnVy0jMSylOK0pN1QtKLS5JLC1KzCthUMaUdU8tgSgoASrwySwuYZDCVOSTn5xYkpmfx8BbllmmV5yak6YXDCQYmBkYGZiAJAOQBkEIALMA)
+  last-modified (1584666697971)
+}

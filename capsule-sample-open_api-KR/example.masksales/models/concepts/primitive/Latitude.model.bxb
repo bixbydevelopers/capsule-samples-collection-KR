@@ -1,0 +1,3 @@
+decimal (Latitude) {
+  description (해당 판매처 위도)
+}

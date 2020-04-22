@@ -1,0 +1,4 @@
+structure (Photo) {
+  description (concept을 복제) // 참조 (https://bixbydevelopers.com/dev/docs/reference/type/structure.role-of)
+  role-of (viv.core.BaseImage)
+}

@@ -1,0 +1,28 @@
+result-view {
+  match: TourInfoLocationResult (tourinfolocation) {
+    from-output: TourInfoLocation
+  }
+
+  message {
+    template ("주변 관광 정보입니다")
+  }
+
+  render {
+    if (size(tourinfolocation) > 1) {
+      list-of (tourinfolocation) {
+        has-details (true)
+        where-each (item) {
+          layout-macro (tourinfolocation-thumbnail-card) {
+            param (tourinfolocation) {
+              expression (item)
+            }
+          }
+        }
+      }
+    } else-if (size(tourinfolocation) == 1) {
+      layout-match (tourinfolocation) {
+        mode (Details)
+      }
+    }
+  }
+}

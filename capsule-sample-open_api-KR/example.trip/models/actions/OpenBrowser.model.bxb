@@ -1,0 +1,10 @@
+action (OpenBrowser) {
+  type(Constructor)
+  collect {
+    input (point) {
+      type (Point)
+      min (Required) max (One)
+    }
+  }
+  output (URL)
+}

@@ -1,0 +1,26 @@
+action (GetReversePoint) {
+  description ("좌표를 기반으로 현재 주소를 보여줍니다.")
+  type(Fetch)
+  collect {
+    computed-input (point){
+      type (geo.GeocodedAddress)
+      min (Optional) max (One)
+      compute{
+        // 사용자의 위치를 가져오기 위해서는 동의가 필요
+        // capsule.bxb의 'user-profile-access' 등록
+        // 참조 (https://bixbydevelopers.com/dev/docs/reference/type/capsule.permissions)
+        intent{
+          goal: geo.GeocodedAddress
+          route: geo.CurrentLocation
+        }         
+        
+      }
+    }
+  }
+  output (geo.GeocodedAddress){
+    evaluate{
+      $expr(point)
+    }
+  }
+}
+    

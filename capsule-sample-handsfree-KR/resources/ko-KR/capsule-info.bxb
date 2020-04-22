@@ -1,0 +1,17 @@
+capsule-info {
+  display-name (MatzipFinder)
+  developer-name (Samsung Electronics)
+  icon-asset (/img/bixby_launcher.png)
+  description ("#include <matzip.h>")
+  website-url (https://github.com/bixbydevelopers)
+  search-keywords{
+    keyword (Beer)
+  }
+  dispatch-name (맛집조아)
+
+  requested-permissions{
+    permission (user-profile-access){
+      justification ("사용자의 위치 정보와 이름을 사용합니다.")
+    }
+  }
+}

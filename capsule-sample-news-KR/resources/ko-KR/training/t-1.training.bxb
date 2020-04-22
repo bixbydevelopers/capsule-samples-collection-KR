@@ -1,0 +1,5 @@
+train (t-1rayu1buth5y31gt1ktfxlr7w) {
+  utterance ("[g:GetNewsByTime] (이틀 전)[v:time.DateTimeExpression] 뉴스 가져와")
+  plan (Y2BmEE+tSMwtyEnVy0stL9ZzSS1JzMxxSSxJZJBCkXBPLfED0k6VIZm5qQzSZZlleiVAlh5QaSpIyLWioCi1uDgzP4+BiYERiBmAJCMDCED5AA==)
+  last-modified (1571901811069)
+}

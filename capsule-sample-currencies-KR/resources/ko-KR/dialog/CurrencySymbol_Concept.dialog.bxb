@@ -1,0 +1,4 @@
+dialog (Concept) {
+  match: CurrencySymbol(this)
+  template("통화별")
+}

@@ -1,0 +1,5 @@
+train (t-nwo2qd5857jvylshxsnj59md4) {
+  utterance ([g:TourInfoLocationResult] 놀러갈 곳 있니)
+  plan (Y2BkUCvISaxML8ovzUvRKynKLNALyS8t8sxLy/fJT04syczPC0otLs0pYQABRhABAA==)
+  last-modified (1585102954175)
+}

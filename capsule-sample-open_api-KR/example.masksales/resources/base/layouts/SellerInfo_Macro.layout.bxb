@@ -1,0 +1,66 @@
+layout-macro-def (SellerInfo) {
+	params {
+		param (info) {
+			type (ResultsSearch)
+			min (Required) max (One)
+		}
+	}
+	content {
+		section {
+			content {
+				cell-card {
+					slot2 {
+						content {
+							order(PrimarySecondary)
+							primary("이름")
+							secondary("[#{value(info.sellerName)}]")
+						}
+					}
+				}
+				cell-card {
+					slot2 {
+						if (exists(info.remainMask)) {
+							content {
+								order(PrimarySecondary)
+								primary("재고 상태")
+								secondary {			
+									if (info.remainMask == 'empty') {
+										template ("재고 상태: 0개~1개")
+									} else-if (info.remainMask == 'break') {
+										template ("재고 상태: 판매중지")
+									} else-if (info.remainMask == 'few') {
+										template ("재고 상태: 2개~29개")
+									} else-if (info.remainMask == 'some') {
+										template ("재고 상태: 30개~99개")
+									} else-if (info.remainMask == 'plenty') {
+										template ("재고 상태: 100개 이상")
+									} else {
+										template ("재고 상태: 정보없음")
+									}
+								}
+							}								
+						}
+					}
+				}
+				cell-card {
+					slot2 {
+						content {
+							order(PrimarySecondary)
+							primary("입고 시간")
+							secondary("[#{value(info.maskWhen)}]")
+						}
+					}
+				}
+				cell-card {
+					slot2 {
+						content {
+							order(PrimarySecondary)
+							primary("주소")
+							secondary("[#{value(info.sellerAddr)}]")
+						}
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,18 @@
+action (GetNewsByTime) {
+  type(Search)
+  collect {
+    input (dateTimeExpression) {
+      type (time.DateTimeExpression)
+      min (Optional) max (One)
+    }
+    input (dayOfWeek) {
+      type (DateQueryType)
+      min (Optional) max (One)
+    }
+    input (detachedTime) {
+      type (time.DetachedTime)
+      min (Optional) max (One)
+    }
+  }
+  output (DetailData)
+}

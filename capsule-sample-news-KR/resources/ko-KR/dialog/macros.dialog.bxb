@@ -1,0 +1,42 @@
+// 여러 상황에서 사용될 수 있는 dialog template를 선언 가능 (https://bixbydevelopers.com/dev/docs/dev-guide/developers/refining-dialog.dialog-macros)
+
+template-macro-def (chooseOneNews) {
+  params {
+    param(news) {
+      type (Title)
+      min (Required) max (Many)
+    }
+  }
+  
+  content {
+    if(size(news) != 1){
+      template("[#{value(news[0])}]와 [#{value(news[1])}]가 있습니다."){
+
+        // 빅스비가 읽어주는 문장을 변경 가능(https://bixbydevelopers.com/dev/docs/reference/type/dialog.template.speech)
+        speech ("아래의 기사가 검색되었습니다.")
+      }
+    }else{
+      template("[#{value(news[0])}]가 있습니다."){
+
+        // 빅스비가 읽어주는 문장을 변경 가능(https://bixbydevelopers.com/dev/docs/reference/type/dialog.template.speech)
+        speech ("아래의 기사가 검색되었습니다.")
+      }
+    }
+    
+  }
+}
+
+template-macro-def (unknownError) {
+  content {
+    choose (Random) {
+      template("문제가 발생한 것같아요! 다시 한번 부탁드려요.")
+      template("지금은 실행하지 못할것 같아요.")
+    }
+  }
+}
+
+template-macro-def (detailProgress) {
+  content {
+    template("선택하신 목록 입니다.")
+  }
+}

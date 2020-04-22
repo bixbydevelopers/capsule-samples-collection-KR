@@ -1,0 +1,50 @@
+action (GetRestautantList) {
+	description (맛집의 데이터를 가져옵니다.)
+	type(Search)
+	
+	collect {
+		input(location){
+			type (Location)
+			min (Required) max (One)
+			default-init{
+				intent{
+					goal: GetLocation
+				}
+			}
+		}
+		
+		input (self) {
+			type (self.Self)
+			min (Required) max (One)
+			default-init{
+				intent{
+					//goal: self.GetImaginarySelf // 사용자 더미 데이터를 가져오는 함수, 테스트시 사용
+					goal: self.GetSelf // 실제 마켓플레이스 배포시에 사용
+				}
+			}
+		}
+	}
+	
+	output (Restaurant){
+		throws{
+			error (NotSupportedLocation){ //지원하지 않는 지역정보
+        on-catch{
+          halt{
+            dialog{
+              template ("지역 정보가 없습니다")
+              }
+          }
+        }
+
+
+			}
+		}
+		on-empty{
+			halt{
+				dialog{
+					template ("[#{value(self.nameInfo.structuredName)} 님,]해당 지역에 검색되는 맛집이 없습니다")
+				}
+			}
+		}
+	}
+}

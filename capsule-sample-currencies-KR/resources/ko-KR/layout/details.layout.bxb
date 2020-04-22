@@ -1,0 +1,20 @@
+layout {
+  match: CurrencyInfo (this)
+  mode (Details)
+  
+  content {
+    section{
+      content{
+        cell-area {
+          slot2 {
+            content {
+              order (PrimarySecondary)
+              primary ("[#{value(this.value)} #{value(this.currencySymbol)}]")
+              secondary ("[국가: #{value(this.nation)}]")
+            }
+          }
+        }
+      }
+    }
+  }
+}

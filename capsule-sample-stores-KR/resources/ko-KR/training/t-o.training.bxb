@@ -1,0 +1,4 @@
+train (t-o18cr2nx72rwbwzypjm9yayfq) {
+  utterance ("[g:StoreInfo] (경기도)[v:geo.LevelOneDivisionName] 맛집이 뭐있지?")
+  plan (fc7dCoIwHIfhn31/nHZgEHoHgy6hiCCIgryCkcv+oBs43aHX3jSGlOVgbHufMYYlfM0zXcqE6ULlQrOoXk7yoTpyJBk3ivCfVFrw/P7EypBhiVAsas43kZCSWLu6LymNPyhwtIszkqSLnBdkxIEM6dp952dhRHqVrWyc1J/oaNCnFUfY79v2+W+88ExgAQ8DDDHCGBNMMcPcNvyoHtB02P7e12Ngp73/Ag==)
+}

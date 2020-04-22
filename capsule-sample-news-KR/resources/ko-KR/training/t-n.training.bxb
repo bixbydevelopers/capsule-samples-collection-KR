@@ -1,0 +1,5 @@
+train (t-nkfm6cwz37ge89kpep8o140lu) {
+  utterance ("[g:GetNewsDetail] (식당)[v:Topic:Restaurant] 뉴스 찾아줘")
+  plan (Y2BlEE+tSMwtyEnVy0stL9ZzSS1JzMxxSSxJZJBCkXBPLfED0hB5BkEUOZAEgwg25QxCKKIh+QWZyQwsDIwMTAzMQJoBymIEs0CACUgDxQE=)
+  last-modified (1571895708053)
+}

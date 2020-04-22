@@ -1,0 +1,11 @@
+structure (ResultPoint) {
+  description (해당 판매처 좌표)
+  property (latitude) {
+    type (Latitude)
+    min (Required) max (One)
+  }
+  property (longitude) {
+    type (Longitude)
+    min (Required) max (One)
+  }
+}

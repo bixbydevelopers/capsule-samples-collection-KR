@@ -1,0 +1,28 @@
+endpoints {
+  action-endpoints {
+    action-endpoint (GetQuizzes) {
+      accepted-inputs (category, type)
+      local-endpoint (GetQuizzes.js)
+    }
+    
+    action-endpoint (GetCategories) {
+      accepted-inputs ()
+      local-endpoint (GetCategories.js)
+    }
+    
+    action-endpoint (SelectCategory) {
+      accepted-inputs (category)
+      local-endpoint (SelectCategory.js)
+    }
+        
+    action-endpoint (GetTypes) {
+      accepted-inputs ()
+      local-endpoint (GetTypes.js)
+    }
+    
+    action-endpoint (ShowQuiz) {
+      accepted-inputs (quizlist, answer, ordinal)
+      local-endpoint (ShowQuiz.js)
+    }
+  }
+}

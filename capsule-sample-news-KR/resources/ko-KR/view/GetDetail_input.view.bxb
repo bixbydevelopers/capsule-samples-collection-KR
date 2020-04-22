@@ -1,0 +1,30 @@
+// input 화면에 대한 보여주는 방식을 설정 (https://bixbydevelopers.com/dev/docs/reference/type/input-view)
+input-view {
+  // 입력 화면을 보여주고 싶은 input concept을 지정
+  match: News(this)
+
+  message{
+    // input화면에서 dialog를 보여주는 방식을 설정 param을 통하여 macro로 변수를 보내기 가능
+    // 참조(https://bixbydevelopers.com/dev/docs/dev-guide/developers/refining-dialog.dialog-macros)
+    template-macro (chooseOneNews){
+      param (news){
+        expression (title)
+      }  
+    }
+  }
+
+  render {
+    // 어떻게 화면을 그릴 것인가에 대하여 설정
+    // 참조(https://bixbydevelopers.com/dev/docs/reference/ui-kit/input.pickers.selection-of)
+    selection-of (this) {
+      where-each (one) {
+
+        layout-macro (dataSet) {
+          param (data){ // GetDetail_Input_Macro.layout의 param명을 기입
+            expression (one) // input으로 들어온 객체들 중 하나를 layout으로 전달
+          }
+        }
+      }
+    }
+  }
+}

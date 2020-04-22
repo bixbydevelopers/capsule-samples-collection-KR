@@ -1,0 +1,5 @@
+train (t-50emmabcgde4ho8kf5m3f1kbl) {
+  utterance ("[g:ShowQuiz:continue] (첫 번째)[v:entity.Ordinal:1]로 해줘")
+  plan (Y2BhkE2tSMwtyEnVKyzNrEpPzE3VCyjKTy9KLS72zEvLZ5DEkA7OyC8PBHII6RQqyyzTS80rySyp1PMvSsnMS8xhYGZgZGACkgxAGgQhgAnIAooBAA==)
+  last-modified (1555307305698)
+}

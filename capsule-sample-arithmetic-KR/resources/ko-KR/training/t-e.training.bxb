@@ -1,0 +1,5 @@
+train (t-etwg1dr8c8ac0zcep02sxph1t) {
+  utterance ("[g:Result] (18)[v:LeftOperand]과 (7)[v:RightOperand]을 (곱해)[v:Operator:multiplication]")
+  plan (Y2BlkEytSMwtyEnVSyzKLMnITS3JTNYLSi0uzSlhUMMi5Qhn+hekFiWWZObnMchhUeeTmlYCVpGXwiCNRR6iO7+IQR6b/ZnpGXDdLAyMDEwMzECaAciCQBgAiUHlAA==)
+  last-modified (1552978564553)
+}

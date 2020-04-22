@@ -1,0 +1,5 @@
+train (t-9gq4u88j567jhc6dou575bkxx) {
+  utterance ("[g:Result] (16)[v:LeftOperand]에서 (7)[v:RightOperand]을 (빼줘)[v:Operator:subtract]")
+  plan (Y2BlkEytSMwtyEnVSyzKLMnITS3JTNYLSi0uzSlhUMMi5Qhn+hekFiWWZObnMchhUeeTmlYCVpGXwiCNRR6iO7+IQR6b/ZnpGXDdLAyMDEwMzECaAciCQBgAiUHlAA==)
+  last-modified (1555029213129)
+}

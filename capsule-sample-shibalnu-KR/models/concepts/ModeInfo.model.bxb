@@ -1,0 +1,5 @@
+structure (ModeInfo) {
+  property (mode) {
+    type (Mode)
+  }
+}

@@ -1,0 +1,5 @@
+train (t-oiu7dkbh5dxi8lu9ydfkv0b2m) {
+  utterance ("[g:AddrSearch] 마스크 재고 남은 (중산동)[v:geo.SearchTerm] 약국 알려줘")
+  plan (Y2BjUCrISaxML8ovzUvRy00szi5OzEkt1gtKLS7NKSkOTk0sSs5gkMeqxjElpQiqQKgss0wvPTVfzy8xNzUlID8zr4RBGCbmWFqSX1yanp5aXMIgiUWwrjwjtSgVYQbEzJDUolwGVgZGBiYGZgYWIIsBymYG0gxgDAJMQBZQDgA=)
+  last-modified (1585637314999)
+}

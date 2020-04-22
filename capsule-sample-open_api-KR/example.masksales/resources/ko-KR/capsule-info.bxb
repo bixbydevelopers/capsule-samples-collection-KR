@@ -1,0 +1,21 @@
+// https://bixbydevelopers.com/dev/docs/dev-guide/developers/deploying.prep-marketplace#create-your-capsule-infobxb-file
+capsule-info {
+  display-name (공적 마스크 판매 정보)
+  developer-name (Bixby)
+  icon-asset (images/icon.png)
+  description (공적 마스크 판매 정보 Open API 를 사용해서 판매처를 보여주는 캡슐입니다.)
+
+  dispatch-name (마스크 판매 정보)
+  dispatch-aliases {
+    alias (마스크 판매)
+  }
+  search-keywords{
+    keyword (마스크 판매) 
+    keyword (마스크 판매 정보) 
+  }
+  requested-permissions {
+    permission (device-location-access) {
+      justification (Your location will be used to find your position)
+    }
+  }  
+}

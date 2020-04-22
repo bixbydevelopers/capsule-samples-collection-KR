@@ -1,0 +1,25 @@
+result-view{
+  match: Restaurant(this)
+
+  render{
+    if(size(this) == 1){
+      layout{
+        layout-macro (RestaurantInfo){
+          param(info){
+            expression (this)
+          }
+        }
+      }      
+    }else{
+      list-of (this){
+        where-each (item){
+          layout-macro (RestaurantList){
+            param(restaurant){
+              expression (item)
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,5 @@
+train (t-xz40szbm1hu30yicbjo3wtnn4) {
+  utterance ("[g:SelectType:continue:QuizType] (사지선다형)[v:QuizType:사지선다형]")
+  plan (Y2BmkEytSMwtyEnVKyzNrEpPzE3VCwQyQioLUhmkMaSCU3NSk0vAknj0MTEwAjEDkGRkAAEoHwA=)
+  last-modified (1550724074110)
+}

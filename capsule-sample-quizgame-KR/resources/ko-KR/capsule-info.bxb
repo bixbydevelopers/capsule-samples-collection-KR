@@ -1,0 +1,15 @@
+capsule-info {
+  display-name  (퀴즈게임)
+  developer-name  (퀴즈게임)
+  icon-asset  (/img/bixby_launcher.png)
+  description ("간단한 퀴즈 게임 capsule 입니다.")
+  website-url  (https://github.com/bixbydevelopers/capsule-sample-quizgame-KR)
+  terms-url  (https://github.com/bixbydevelopers/capsule-sample-quizgame-KR/blob/master/LICENSE)
+  dispatch-name (퀴즈게임)
+  dispatch-aliases {
+    alias (퀴즈)
+  }
+  search-keywords{
+    keyword (예제)
+  }
+}

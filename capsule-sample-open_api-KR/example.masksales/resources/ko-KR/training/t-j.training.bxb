@@ -1,0 +1,5 @@
+train (t-jknjlszbjoyftt93y9427ga4t) {
+  utterance ("[g:AddrSearch] (구로동)[v:geo.SearchTerm]에서 마스크 구매할 수 있는 곳 알려줘")
+  plan (Y2BjUCrISaxML8ovzUvRy00szi5OzEkt1gtKLS7NKSkOTk0sSs5gkMeqxjElpQiqQKgss0wvPTVfzy8xNzUlID8zr4RBGCbmWFqSX1yanp5aXMIgiUWwrjwjtSgVYQbEzJDUolwGVgZGBiYGZgYWIIsBymYG0gxgDAJMQBZQDgA=)
+  last-modified (1585637314858)
+}

@@ -1,0 +1,39 @@
+capsule {
+  id (example.quizgame)
+  version (0.1.0)
+  format (3)
+  targets {
+    target (bixby-mobile-ko-KR)
+  }
+  
+  runtime-version (2)
+  
+  capsule-imports {
+    import (viv.entity) {
+      as (entity)
+      version (4.0.14)
+    }
+    import (viv.core){
+      as (core)
+      version-from (entity)
+    }
+    import (viv.image){
+      as (image)
+      version-from (entity)
+    }
+    import (viv.money){
+      as (money)
+      version (2.22.26)
+    }
+  }
+
+  store-sections{
+    section (GamesAndFun)
+  }
+
+  store-countries{
+    only{
+      allow (KR)
+    }
+  }
+}

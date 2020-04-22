@@ -1,0 +1,4 @@
+train (t-v3lvodbkiudfok2sowgya0u2s) {
+  utterance ("[g:StoreInfo:continue] (마포구)[v:geo.SubLocalityOneName]는 있니?")
+  plan (fY7NCoJAFIWP9r+PoBau2iYteoF+CIIoyCeYnJtd0JlwRqm3Tw0DA1tcuOf7DpeLETwjEpOpyKenSB4xbbWklR9YndJB3XSL37OSVQfL/34eamVsKljZhSGRhneMc879iLQfVPlCEWuFaU03GceyobxarWXCistzlnPacc6m9JPvwex61KGI2b7OijCrefVNi2vyk0gIQzhw0UEXPfQxKDJ+iANUDAX77G4xRe8N)
+}

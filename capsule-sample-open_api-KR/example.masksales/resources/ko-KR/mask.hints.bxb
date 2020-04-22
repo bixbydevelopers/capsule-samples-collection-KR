@@ -1,0 +1,8 @@
+// https://bixbydevelopers.com/dev/docs/dev-guide/developers/deploying.prep-marketplace#provide-hints-for-bixby
+hints {
+  uncategorized {
+    hint (마스크 판매 정보에서 근처에 마스크 파는 곳 어디야)
+    hint (마스크 판매 정보에서 내 주변 마스크 정보 알려줘)
+    hint (마스크 판매 정보에서 구로동 마스크 정보 알려줘)
+  }
+}

@@ -1,0 +1,8 @@
+// https://bixbydevelopers.com/dev/docs/dev-guide/developers/deploying.prep-marketplace#provide-hints-for-bixby
+hints {
+  uncategorized {
+    hint (여행가자에서 놀러 갈 곳 알려줘)
+    hint (여행가자에서 주변 관광정보 알려줘)
+    hint (여행가자에서 추천해줘)
+  }
+}

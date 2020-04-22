@@ -1,0 +1,33 @@
+navigation-support{
+    match{ _(this) }
+    
+    ordinal-selection-patterns{
+        pattern ("(1)[v:viv.core.CardinalSelector:1]번")
+        pattern ("(1)[v:viv.core.CardinalSelector:1]번 보여줘")
+        pattern ("(1)[v:viv.core.CardinalSelector:1]번 선택")
+        pattern ("(1)[v:viv.core.CardinalSelector:1]번 선택해줘")
+        pattern ("(1)[v:viv.core.CardinalSelector:1]번 골라줘")
+        pattern ("(1)[v:viv.core.CardinalSelector:1]번 꺼 선택해줘")
+        pattern ("(1)[v:viv.core.CardinalSelector:1]번 꺼 골라줘")
+        pattern ("(1)[v:viv.core.CardinalSelector:1]번 예약할래")
+        pattern ("(1)[v:viv.core.CardinalSelector:1]번 선택할게")
+        pattern ("(1)[v:viv.core.CardinalSelector:1]번 선택해봐")
+        pattern ("(1)[v:viv.core.CardinalSelector:1]번 선택할래")
+        pattern ("(1)[v:viv.core.CardinalSelector:1]번 장소")
+        pattern ("(1)[v:viv.core.CardinalSelector:1]번 장소 보여줘")
+        
+        pattern ("(첫 번째)[v:viv.core.OrdinalSelector] 보여줘")
+        pattern ("(첫 번째)[v:viv.core.OrdinalSelector] 선택")
+        pattern ("(첫 번째)[v:viv.core.OrdinalSelector] 선택해줘")
+        pattern ("(첫 번째)[v:viv.core.OrdinalSelector] 골라줘")
+        pattern ("(첫 번째)[v:viv.core.OrdinalSelector] 꺼 선택해줘")
+        pattern ("(첫 번째)[v:viv.core.OrdinalSelector] 꺼 골라줘")
+        pattern ("(첫 번째)[v:viv.core.OrdinalSelector] 예약할래")
+        pattern ("(첫 번째)[v:viv.core.OrdinalSelector] 선택할게")
+        pattern ("(첫 번째)[v:viv.core.OrdinalSelector] 선택해봐")
+        pattern ("(첫 번째)[v:viv.core.OrdinalSelector] 선택할래")
+        pattern ("(첫 번째)[v:viv.core.OrdinalSelector] 꺼")
+        pattern ("(첫 번째)[v:viv.core.OrdinalSelector] 장소")
+        pattern ("(첫 번째)[v:viv.core.OrdinalSelector] 장소 보여줘")
+    }
+}

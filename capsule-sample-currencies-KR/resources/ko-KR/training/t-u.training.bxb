@@ -1,0 +1,4 @@
+train (t-u1fmhr7jhp4udv613indz7494) {
+  utterance ("[g:CurrencyInfo] (1000)[v:money.CurrencyValue]{[g:BaseCurrency] (원)[v:CurrencySymbol:KRW]}이 {[g:TargetCurrency] (미국 달러)[v:CurrencySymbol:USD]}로 얼마야?")
+  plan (Y+BkUChOzC0uzUvXS61IzC3Icc5PSTXXcy4tKkrNS670zEvLZ1DGpsI9tQRFEVZjnBKLU2GqcBqDokgJn2uCK3OT8nOwqwlJLEpHOIlBFYdlaMqIsU68LLNMLzc/L7USLhOWmFOaysDBwMjAxMDMwMLAysDGwA7kM0BFGMEijEDIAMYwkgEoygBUxwTWww6kmRhYAQ==)
+}

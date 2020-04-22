@@ -1,0 +1,23 @@
+layout-macro-def (photoinfo) {
+  params {
+    param (photo) {
+      type (Photo)
+      min (Required) max (One)
+    }
+  }
+  content {
+    image-card {
+      aspect-ratio (4:3)
+      title-area{
+        halign (Start)
+        slot1{
+          text{
+            value("시바!")
+            style(Title_L)
+          }
+        }
+      }
+      image-url("[#{value(photo.url)}]")
+    }
+  }
+}

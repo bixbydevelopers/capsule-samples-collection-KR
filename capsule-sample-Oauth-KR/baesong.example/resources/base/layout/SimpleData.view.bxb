@@ -1,0 +1,50 @@
+result-view {
+  match {
+    JsonResult(this)
+  }
+  render {
+    if (size(data) == 0) {
+      layout {
+        section {
+          content {
+            for-each(data){ // 객체를 이터레이트하기 위한 방법, 사용법: for-each(upper.targetObject){ as (targetObject) { grammar }} 
+              as (data){
+                cell-card {
+                  slot1 {
+                  }
+                  slot2 {
+                    content {
+                      primary ("이곳은 id가 나옵니다.")
+                      secondary ("이곳은 message가 나옵니다.")
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    } else {
+      layout {
+        section {
+          content {
+            for-each(data){ // 객체를 이터레이트하기 위한 방법, 사용법: for-each(upper.targetObject){ as (targetObject) { grammar }} 
+              as (data){
+                cell-card {
+                  slot1 {
+                  }
+                  slot2 {
+                    content {
+                      primary ("[#{value(data.id)}]")
+                      secondary ("[#{value(data.message)}]")
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

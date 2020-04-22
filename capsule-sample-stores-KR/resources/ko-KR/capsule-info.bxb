@@ -1,0 +1,15 @@
+capsule-info {
+  display-name  (가게 찾기)
+  developer-name  (가게 찾기)
+  icon-asset  (/img/bixby_launcher.png)
+  description ("간단한 가게 찾기 입니다")
+  website-url  (https://github.com/bixbydevelopers/capsule-sample-stores-KR)
+  terms-url  (https://github.com/bixbydevelopers/capsule-sample-stores-KR/blob/master/LICENSE)
+  dispatch-name (가게 찾기)
+  dispatch-aliases {
+    alias (가게 찾아라)
+  }
+  search-keywords{
+    keyword (예제)
+  }
+}

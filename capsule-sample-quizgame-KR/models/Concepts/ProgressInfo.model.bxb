@@ -1,0 +1,18 @@
+structure (ProgressInfo) {
+  property (nowNum){
+    type(ProgressNum)
+    min (Required) max (One)
+  }
+  property (totalNum){
+    type(QuizTotalNum)
+    min (Required) max (One)
+  }
+  property (correctNum){
+    type(QuizCorrectNum)
+    min (Required) max (One)
+  }
+  property (quizzes) {
+    type (QuizInfo)
+    min (Required) max (Many)
+  }
+}

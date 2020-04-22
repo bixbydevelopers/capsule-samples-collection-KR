@@ -1,0 +1,5 @@
+train (t-fzyjjrbj8u8ak73sumbzdrwpx) {
+  utterance ("[g:GetNewsDetail] (테크)[v:Topic:Tech] 뉴스 찾아줘")
+  plan (Y2BlEE+tSMwtyEnVy0stL9ZzSS1JzMxxSSxJZJBCkXBPLfED0hB5BkEUOZAEgwg25QxCKKIh+QWZyQwsDIwMTAzMQJoBymIEs0CACUgDxQE=)
+  last-modified (1571895702172)
+}

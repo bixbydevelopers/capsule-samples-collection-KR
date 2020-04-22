@@ -1,0 +1,10 @@
+train (t-4lnvzgsoxcn1fx3107runp0l7) {
+  utterance ([g:ShowQuiz] 퀴즈게임 할래)
+  plan (Y2BmkE2tSMwtyEnVKyzNrEpPzE3VCyjKTy9KLS72zEvLZ5DEkA7OyC8PBHII6WRiYARiBiDJyMAAowE=)
+  last-modified (1550128206249)
+}
+train (t-4uqc7lkol9bdfmseezkmshypb) {
+  utterance ("[g:SelectCategory:continue:QuizCategory] (아무거나)[v:QuizCategory:'Any Category'] 선택")
+  plan (Y2BmUEitSMwtyEnVKyzNrEpPzE3VCwQynBNLUtPziyr9SnMZ5DFUBKfmpCaXwNQwyOI1goGJgRGIGYAkIwMIQPkA)
+  last-modified (1550723346001)
+}

@@ -1,0 +1,7 @@
+action (SimpleDataGetAction) {
+  type(Search)
+  description (get simple data from resource server)
+  collect {
+  }
+  output (JsonResult)
+}
