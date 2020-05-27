@@ -1,0 +1,10 @@
+train (t-99wo3ch18ykaj5hb8y4wwvm44) {
+  utterance ([g:ItemPunchOut] 검색해주세요)
+  plan (Y2BmkMhILEtNTM/PT0lJrNTLTq3Mzkut1AstymRQxCrjWZKaG1Cal5zhX1rCIINVSVBqcWlOSTEDEwMjEDMASUYGBhgNAA==)
+  last-modified (1589434868035)
+}
+train (t-9o6pf4ifz2q1k3gfuq5uh81av) {
+  utterance ([g:ItemPunchOut] 보고싶어)
+  plan (Y2BmkMhILEtNTM/PT0lJrNTLTq3Mzkut1AstymRQxCrjWZKaG1Cal5zhX1rCIINVSVBqcWlOSTEDEwMjEDMASUYGBhgNAA==)
+  last-modified (1589434872803)
+}

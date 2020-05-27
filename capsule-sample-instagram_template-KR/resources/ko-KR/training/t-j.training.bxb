@@ -1,0 +1,15 @@
+train (t-j1wmea682g65hacdnxbeu4y8m) {
+  utterance ([g:ItemPunchOut] 시작해주세요)
+  plan (Y2BmkMhILEtNTM/PT0lJrNTLTq3Mzkut1AstymRQxCrjWZKaG1Cal5zhX1rCIINVSVBqcWlOSTEDEwMjEDMASUYGBhgNAA==)
+  last-modified (1589434961243)
+}
+train (t-jtzjeqfv2vi5nhxjjjudjkgqq) {
+  utterance ([g:ItemPunchOut] 추천해볼래)
+  plan (Y2BmkMhILEtNTM/PT0lJrNTLTq3Mzkut1AstymRQxCrjWZKaG1Cal5zhX1rCIINVSVBqcWlOSTEDEwMjEDMASUYGBhgNAA==)
+  last-modified (1589434965847)
+}
+train (t-jwpe6pympo6k47yzqolu0lfoo) {
+  utterance ([g:ItemPunchOut] 검색해봐)
+  plan (Y2BmkMhILEtNTM/PT0lJrNTLTq3Mzkut1AstymRQxCrjWZKaG1Cal5zhX1rCIINVSVBqcWlOSTEDEwMjEDMASUYGBhgNAA==)
+  last-modified (1589434972169)
+}

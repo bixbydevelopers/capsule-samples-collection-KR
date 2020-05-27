@@ -1,0 +1,21 @@
+capsule {
+  id (example.instagram)
+  version (1.1.0)
+  format (3)
+  targets {
+    target (bixby-mobile-ko-KR)
+  }
+  runtime-version (7)
+  default-action (ItemPunchOut)
+  store-countries {
+    only {
+      allow (KR)
+    }
+  }
+  device-models {
+    all
+  }
+  store-sections {
+    section (Social)
+  }
+}

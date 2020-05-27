@@ -1,0 +1,10 @@
+train (t-05p6e68j508qo3a5p7favcp1g) {
+  utterance ([g:ItemPunchOut] 인스타 보여줘)
+  plan (Y2BmkMhILEtNTM/PT0lJrNTLTq3Mzkut1AstymRQxCrjWZKaG1Cal5zhX1rCIINVSVBqcWlOSTEDEwMjEDMASUYGBhgNAA==)
+  last-modified (1589434738027)
+}
+train (t-09o735xr50n14jin2xp6bldmu) {
+  utterance ([g:ItemPunchOut] 보여주세요)
+  plan (Y2BmkMhILEtNTM/PT0lJrNTLTq3Mzkut1AstymRQxCrjWZKaG1Cal5zhX1rCIINVSVBqcWlOSTEDEwMjEDMASUYGBhgNAA==)
+  last-modified (1589434783922)
+}

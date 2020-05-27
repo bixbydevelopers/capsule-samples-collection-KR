@@ -1,0 +1,13 @@
+endpoints {
+  action-endpoints {
+    action-endpoint (GetItemLists) {
+      accepted-inputs ()
+      local-endpoint (getItemLists.js)
+    }
+    action-endpoint (ItemPunchOut) {
+      accepted-inputs (results)
+      local-endpoint (itemPunchOut.js)
+    }
+  }
+}
+ 

@@ -1,0 +1,15 @@
+action (ItemPunchOut) {
+	type(Search)
+	collect {
+		input (results) {
+			type (Results)
+			min (Required) max (One)
+			default-init {
+				intent {
+					goal: GetItemLists
+				}
+			}
+		}
+	}
+	output (Uri)
+}

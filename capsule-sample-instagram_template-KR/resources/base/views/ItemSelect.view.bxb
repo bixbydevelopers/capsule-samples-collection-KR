@@ -1,0 +1,19 @@
+input-view {
+  match : Results (results) 
+	
+	message {
+		template ("Instagram 입니다.")
+	}
+	 
+	render {
+  	selection-of (results) {
+			where-each (one) {
+				layout-macro (results-compound-card) {
+					param (results) {
+						expression (one)
+					}
+				}
+			}
+		}
+	}
+}

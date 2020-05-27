@@ -1,0 +1,5 @@
+train (t-zy17p1c9cg64nmz9xl1gru8dv) {
+  utterance ([g:ItemPunchOut] 알려줘)
+  plan (Y2BmkMhILEtNTM/PT0lJrNTLTq3Mzkut1AstymRQxCrjWZKaG1Cal5zhX1rCIINVSVBqcWlOSTEDEwMjEDMASUYGBhgNAA==)
+  last-modified (1589435072538)
+}

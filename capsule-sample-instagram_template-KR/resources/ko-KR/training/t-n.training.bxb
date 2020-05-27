@@ -1,0 +1,10 @@
+train (t-nj5vxb3l9lf7z2gn261uhg1va) {
+  utterance ([g:ItemPunchOut] 찾고싶어)
+  plan (Y2BmkMhILEtNTM/PT0lJrNTLTq3Mzkut1AstymRQxCrjWZKaG1Cal5zhX1rCIINVSVBqcWlOSTEDEwMjEDMASUYGBhgNAA==)
+  last-modified (1589435000786)
+}
+train (t-nposvf1uanz0qaze4xe49x15s) {
+  utterance ([g:ItemPunchOut] 실행)
+  plan (Y2BmkMhILEtNTM/PT0lJrNTLTq3Mzkut1AstymRQxCrjWZKaG1Cal5zhX1rCIINVSVBqcWlOSTEDEwMjEDMASUYGBhgNAA==)
+  last-modified (1589435005320)
+}
