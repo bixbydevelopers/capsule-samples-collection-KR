@@ -36,6 +36,8 @@ Bixby 개발자 여러분들이 필요하신 기능들을 찾아서 참조하여
 
 [Bixby View 예제](../../tree/master/capsule-sample-view_example-KR) - Bixby View 및 layout의 전반적인 기능을 활용한 예제
 
+[Instagram Template](../../tree/master/capsule-sample-instagram_template-KR) - Instagram 캡슐을 쉽게 만들어 볼 수 있는 예제
+
 ## Additional Resources
 
 ### Bixby에 대한 모든 것
