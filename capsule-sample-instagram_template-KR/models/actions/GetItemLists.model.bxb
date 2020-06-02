@@ -1,4 +1,0 @@
-action (GetItemLists) {
-  type (Search)
-  output (Results)
-}
