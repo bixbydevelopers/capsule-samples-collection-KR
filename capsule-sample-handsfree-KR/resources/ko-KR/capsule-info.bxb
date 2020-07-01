@@ -10,8 +10,11 @@ capsule-info {
   dispatch-name (맛집조아)
 
   requested-permissions{
-    permission (user-profile-access){
-      justification ("사용자의 위치 정보와 이름을 사용합니다.")
+    permission (self:profile) {
+      justification ("사용자의 이름을 사용합니다.")
+    }
+    permission (device-location-access){
+      justification ("사용자의 위치 정보를 사용합니다.")
     }
   }
 }

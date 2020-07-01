@@ -14,7 +14,7 @@ capsule-info {
   }
 
   requested-permissions{
-    permission (user-profile-access){
+    permission (self:profile) {
       justification ("사용자의 이름 정보를 사용합니다.")
     }
   }

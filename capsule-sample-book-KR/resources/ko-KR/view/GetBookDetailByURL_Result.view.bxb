@@ -34,7 +34,7 @@ result-view {
   // 참조(https://bixbydevelopers.com/dev/docs/dev-guide/developers/training.intro-training#add-training-examples-for-continuations)
   conversation-drivers {
     if(exists(this)){
-      if(this.sales.saleability == true){
+      if(exists(this.sales.saleability) && this.sales.saleability == true){
         conversation-driver {
           template ("이 책 살래")
         }

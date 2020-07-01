@@ -6,7 +6,7 @@ capsule {
     target (bixby-mobile-ko-KR)
   }
   
-  runtime-version (2)
+  runtime-version (7)
 
   store-sections{
     section (Local)

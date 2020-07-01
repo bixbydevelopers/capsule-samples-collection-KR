@@ -25,7 +25,7 @@ action (showImg) {
           }
         }
         
-        if(!query.mode.random && !query.mode.images){
+        if(exists(query.mode.random) && !query.mode.random && exists(query.mode.images) && !query.mode.images){
           halt{
             dialog{
               template-macro (chooseOneMode)

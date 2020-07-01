@@ -5,7 +5,7 @@ capsule {
   targets {
     target (bixby-mobile-ko-KR)
   }
-  runtime-version (5)
+  runtime-version (7)
   store-countries {
     all
   }
@@ -13,7 +13,7 @@ capsule {
     all
   }
   capsule-imports {
-    import (viv.geo) { as (geo) version (9.26.22) }
+    import (viv.geo) { as (geo) version (9.26.40) }
     import (viv.entity) { as (entity) version(4.0.14) }
     import (viv.core) { as (core) version-from (entity) }
   }

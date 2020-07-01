@@ -7,10 +7,15 @@ capsule {
     target (bixby-mobile-en-US){enabled (false)}
   }
   
-  runtime-version (3)
+  runtime-version (7) {
+    overrides {  // optional
+      auto-on-click-for-list-of (true)
+    }
+  }
   
   permissions{
-    user-profile-access
+    device-location-access
+    library-permission (self:profile)
   }
   
   capsule-imports {
@@ -18,7 +23,7 @@ capsule {
     import (viv.core){ as (core) version-from (entity)}
     import (viv.common) { version(4.0.3) as (common)  }
     import (viv.geo) { as (geo) version-from (entity) }
-    import (viv.self) { version(3.5.217) as (self) }
+    import (viv.self) { version(4.0.3) as (self) }
   }
 
   store-sections{

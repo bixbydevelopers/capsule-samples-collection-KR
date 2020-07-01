@@ -6,7 +6,11 @@ capsule {
     target (bixby-mobile-ko-KR)
   }
   
-  runtime-version (2)
+  runtime-version (7) {
+    overrides {  // optional
+      auto-on-click-for-list-of (true)
+    }
+  }
   
   store-sections{
     section (Local)

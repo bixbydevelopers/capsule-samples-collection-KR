@@ -15,6 +15,13 @@
 맛집 찾아줘
 ```
 
+- 아래 안내가 나오는 경우 코드 확인 필요 
+  "계속하려면 추가 정보가 필요해요. 좀 더 자세한 정보를 알려줄래요?" 
+
+models\action\GetRestautantList.model.bxb
+	// goal: self.GetImaginarySelf // 사용자 더미 데이터를 가져오는 함수, 테스트시 사용
+	goal: self.GetSelf // 실제 마켓플레이스 배포시에 사용
+
 ---
 
 ## Additional Resources

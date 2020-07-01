@@ -5,7 +5,7 @@ module.exports.function = function getQuizzes (category, type) {
   const http = require('http');
   const fail = require('fail');
   
-  let textLib = require("./utils/CleanText.js");
+  let textLibutils = require("./utils/CleanText.js");
   let url = baseAPIURL;
   category = parseInt(category);
   
@@ -45,7 +45,7 @@ module.exports.function = function getQuizzes (category, type) {
   for(let i = 0; i < quizzes.length; ++i){
     rand = Math.floor(Math.random() * 4);
     quizzes[i].id = i + 1;    
-    quizzes[i].question = textLib.CleanText(quizzes[i].question.trim());
+    quizzes[i].question = textLibutils.CleanText(quizzes[i].question.trim());
     
     if(quizzes.type == "boolean"){
       quizzes[i].incorrect_answers.splice(rand, 0, quizzes[i].correct_answer);
@@ -60,7 +60,7 @@ module.exports.function = function getQuizzes (category, type) {
     quizzes[i].answers_list = quizzes[i].incorrect_answers;
     
     for(let j = 0; j < quizzes[i].answers_list.length; ++j){
-      quizzes[i].answers_list[j] = textLib.CleanText(quizzes[i].answers_list[j].trim());
+      quizzes[i].answers_list[j] = textLibutils.CleanText(quizzes[i].answers_list[j].trim());
     }
     
     quizzes[i].result = false;

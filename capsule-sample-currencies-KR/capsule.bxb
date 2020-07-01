@@ -7,15 +7,19 @@ capsule {
     target (bixby-mobile-en-US){enabled (false)}
   }
   
-  runtime-version (3)
+  runtime-version (7) {
+    overrides {  // optional
+      auto-on-click-for-list-of (true)
+    }
+  }
   
   capsule-imports {
     import (viv.entity) { version(4.0.14) as (entity) }
     import (viv.core){ as (core) version-from (entity)}
-    import (viv.common) { version (4.0.3) as (common) }
+    import (viv.common) { version (5.0.0) as (common) }
     import (viv.geo) { as (geo) version-from (entity)}
     import (viv.time){ as (time) version-from (geo) }
-    import (viv.money) {version (2.22.26) as (money)}
+    import (viv.money) {version (2.22.36) as (money)}
   }
 
 

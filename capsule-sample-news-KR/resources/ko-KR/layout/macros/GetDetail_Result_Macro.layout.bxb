@@ -52,7 +52,7 @@ layout-macro-def (info_summary) {
           }
         }
         divider
-        if(info.tel != ''){
+        if(exists(info.tel) && info.tel != ''){
           cell-card {
             slot2 {
               content{

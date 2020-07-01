@@ -91,7 +91,7 @@ layout-macro-def (BookInfo) {
           }
         }
         
-        if (info.sales.saleability == true){
+        if (exists(info.sales.saleability) && info.sales.saleability == true){
           // app-launch을 실행하는 버튼 구현
           cell-card{
             slot1{

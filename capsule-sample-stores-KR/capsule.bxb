@@ -7,7 +7,11 @@ capsule {
     target (bixby-mobile-en-US){enabled (false)}
   }
   
-  runtime-version (3)
+  runtime-version (7) {
+    overrides {  // optional
+      auto-on-click-for-list-of (true)
+    }
+  }
   
   capsule-imports {
     import (viv.entity) { version(4.0.14) as (entity) }
